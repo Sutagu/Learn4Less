@@ -380,6 +380,7 @@ footer{
 }
 #features path:hover{
     fill: #ee6c4d;
+    cursor: pointer;
 }
 #typewriter-state-container{
     position: absolute;
@@ -463,11 +464,20 @@ footer{
     border-radius: 9px;
     font-size:1.3vmin;
 }
-#tutor-select-container{
-    float:left;
-    height:80%;
-    width:30%;
+#tsc-container{
+    float: left;
     margin: 2.5% 0 2.5% 2.5%;
+    
+    width:30%;
+    height:80%;
+    position: relative;
+    text-align: center;
+    font-size:1.5vmin;
+}
+#tutor-select-container{
+    width:100%;
+    height:95%;
+    
     overflow-y: scroll;
     scrollbar-width: thin;
     border-radius: 12px;
@@ -625,7 +635,6 @@ footer{
     
 }
 #tutor-key-book{
-    margin-top:3vmin;
     padding: 1.5vmin;
     width:14vmin;
     display:flexbox;
@@ -646,6 +655,20 @@ button:hover{
     color:#ee6c4d;
     
 }
+#desc-book-ellip{
+    display:flex;
+    margin-top:1.5vmin;
+    width:28%;
+    justify-content: space-between;
+    align-items: center;
+    :hover{
+        cursor: pointer;
+    }
+}
+#desc-ellipsis{
+    position:static;
+    color: #000;
+}
 #tdc-icons{
     display:flex;
     flex-direction: column;
@@ -664,7 +687,17 @@ button:hover{
     align-items: center;
 }
 #bot-tdc{
-    
+    border-top:3px solid #000;
+    margin:5%;
+    display:flex;
+    justify-content: space-between;
+}
+.tutor-rating-atr{
+    padding:2vmin;
+    background-color: #98c1d9;
+    border-radius: 18px;
+    margin-top: 3%;
+    color:#3d5a80;
 }
 #desc-tdc{
     width: 90%;
