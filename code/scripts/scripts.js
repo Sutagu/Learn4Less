@@ -95,7 +95,62 @@ document.addEventListener('DOMContentLoaded',function(){
             ttc.style.display ='none';
             ftc.style.display= 'block';
         });
+        const ellipsis = document.getElementById('desc-ellipsis');
+        const dropdownMenu = document.getElementById('dropdown-menu');
         
+        // Toggle dropdown visibility when ellipsis is clicked
+        ellipsis.addEventListener('click', (e) => {
+            dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+            ellipsis.style.color ="#3d5a80";
+            // Position the dropdown relative to the ellipsis icon
+            const rect = ellipsis.getBoundingClientRect();
+            dropdownMenu.style.top = `${rect.bottom}px`;
+            dropdownMenu.style.left = `${rect.left}px`;
+        });
+        
+        // Hide the dropdown if clicking outside
+        document.addEventListener('click', (e) => {
+            if (!ellipsis.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                ellipsis.style.color ="#000";
+                dropdownMenu.style.display = 'none';
+            }
+        });
+
+
+        const reportOverlay = document.getElementById('report-overlay');
+        const reportBtn = document.getElementById('report-button');
+        const cancelReport = document.getElementById('cancel-report-btn');
+        reportBtn.addEventListener('click', function(){
+            reportOverlay.style.display= 'block';
+            dropdownMenu.style.display = 'none';
+            ftc.style.filter='blur(2px)';
+
+            const reportTextArea = document.getElementById('report-details');
+            const charText = document.getElementById('report-char-num');
+            const maxChar = 250;
+
+            reportTextArea.addEventListener('input', function(){
+                const currentLength = reportTextArea.value.length;
+                charText.textContent= `${currentLength}/${maxChar} characters`;
+                if(currentLength >= maxChar){
+                    charText.style.color='#ee6c4d';
+                }else{
+                    charText.style.color='#000';
+                }
+
+            });
+
+
+            cancelReport.addEventListener('click',function(){
+                reportOverlay.style.display='none';
+                ftc.style.filter='none';
+            });
+        });
+
+
+
+
+
     }
 
 });

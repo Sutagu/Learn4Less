@@ -26,7 +26,7 @@
         </div>
     </nav>
     <main>
-        <div class="content-display-container" id="ss-tutors" style="display:none">
+        <div class="content-display-container" id="ss-tutors" style="display:block">
             <div class="display-container-margin" id="ss-container">
                 <svg id="au-ss-map" baseprofile="tiny" version="1.2" viewbox="0 0 1000 966" xmlns="http://www.w3.org/2000/svg">
                     <g id="features">
@@ -73,7 +73,36 @@
                    </div>
             </div>
         </div>
-        
+        <div id="report-overlay" style="display: none">
+            <div id="report-top"><p>
+                What went wrong?
+            </p></div>
+            <div id="report-bottom">
+                <form id="report-form" action="" method="POST">
+                    <div id="bottom-report-container">
+                       
+                        <select name="report-issue" id="dropmenu-report" required>
+                            <option value="" disabled selected>Select an issue</option>
+                            <option value="inappropriate">Inappropriate content</option>
+                            <option value="false-info">False or misleading information</option>
+                            <option value="spam">Spam or irrelevant</option>
+                            <option value="copyright">Copyright infringement</option>
+                            <option value="web-error">Website error</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <textarea name="report-details" maxlength="250" id="report-details" rows="10" placeholder="Describe the issue in detail..." required></textarea>
+                      
+                        <div id="report-submit-cancel">
+                            <button type="button" class="report-btn" id="cancel-report-btn"><i class="fa-solid fa-xmark"></i></button>
+                            <p id="report-char-num"> 0/250 characters</p>
+                            <button type="submit" class="report-btn" id="submit-report-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
         <div class="content-display-container" id="ttc-tutors" style="display: none;">
             <div class="display-container-margin" id="top-tutor-container">
                 <header data-aos="fade-up" id="state-featured-tutor">Featured Tutors in $select-state</header>
@@ -161,7 +190,7 @@
                 </div>
             </div>
         </div>
-        <div class="content-display-container" id="ftc-tutors" style="display:block">
+        <div class="content-display-container" id="ftc-tutors" style="display:none;">
             <div class="display-container-margin" id="filter-tutor-container">
                 <form action="" method="POST" id="filter-dropmenu-container">
                     <span class="filter-dropmenu">
@@ -332,7 +361,15 @@
                             <div id="desc-book-ellip">
 
                                 <button id="tutor-key-book">Bookings</button>
+                                
                                 <i class="fa-solid fa-ellipsis" id="desc-ellipsis"></i>
+                                <div id="dropdown-menu" class="hidden">
+                                    <ul>
+                                        <li id="report-button">Report</li>
+                                        <li>Open in new page</li>
+                                        <li><a href="mailto:petedaniel.lim@gmail.com">Send email</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -375,6 +412,9 @@
                 </span>
             </div>
         </div>
+            
+            
+
 
 
 

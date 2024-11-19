@@ -707,6 +707,120 @@ button:hover{
     color:#000;
     font-size:1.6vmin;
 }
+#dropdown-menu {
+    position: absolute;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    width: 14vmin;
+    display: none; 
+    z-index: 1000;
+    padding: 0.5vmin;
+}
+
+#dropdown-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#dropdown-menu ul li {
+    padding: 8px 10px;
+    cursor: pointer;
+    font-size: 1.4vmin;
+    color:#000;
+    
+}
+#dropdown-menu ul li a {
+    text-decoration: none;
+    color:#000;
+}
+
+#dropdown-menu ul li:hover {
+    background-color: #d9d9d9;
+}
+
+.hidden {
+    display: none;
+}
+
+#report-overlay{
+    position:absolute;
+    filter: drop-shadow(0 0 1vmin #000);
+    height: 65vmin;
+    width:60vmin;
+    background-color: #98c1d9 ;
+    z-index:1000;
+    border-radius: 12px;
+    top:20%;
+    left:35%;
+    
+}
+#report-bottom{
+    height:70%;
+    width:100%;
+    background-color: #e0fbfc;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+#bottom-report-container{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    gap: 2vmin;
+}
+#dropmenu-report {
+    font-size: 1.9vmin;
+    border: none;
+    border-bottom: 1px solid #000;
+    background: none;
+    padding:3vmin 1vmin;
+    text-align: center;
+    width: 70%; 
+    margin-left:30%;
+    margin-right:30%;
+}
+
+#dropmenu-report option{
+    padding:0;
+}
+#report-details{
+    width:70%;
+    font-size:1.7vmin;
+    background-color: #e0fbfc;
+    
+}
+#report-submit-cancel{
+    display:flex;
+    justify-content: space-between;
+    width:70%;
+    color:#000;
+
+}
+.report-btn{
+    border:none;
+    background-color:#293241;
+    border-radius:50%;
+    width:5vmin;
+    height:5vmin;
+
+}
+.report-btn i{
+    color:#98c1d9;
+    font-size:2vmin;
+}
+#report-top{
+    height:25%;
+    max-height: 25%;
+    width:100%;
+    text-align: center;
+}
+#report-top p{
+    font-size:5vmin;
+    margin-left:20%;
+    margin-right:20%;
+}
 
 
 @keyframes typing{
