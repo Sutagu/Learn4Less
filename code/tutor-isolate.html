@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Learn4Less">
+        <meta name="description" content=""> <!--TODO-->
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <title>Learn4Less homepage</title>
+    </head>
+<body id="tutors-page">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    
+    <nav class="nav-container" id="nav-container-sticky">
+        <div>
+            <a href="index.html"><img src="images/Learn4Less-Logotxt-tr.png" class="nav-logo"></img></a>            
+            <ul>
+                <li><a href="tutors.html">Tutors</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <a href="bookmark.html"><img src="images/bookmark (1).png" class="nav-bookmarks" ></img></a>    
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div id="report-overlay" style="display: none">
+            <div id="report-top"><p>
+                What went wrong?
+            </p></div>
+            <div id="report-bottom">
+                <form id="report-form" action="" method="POST">
+                    <div id="bottom-report-container">
+                       
+                        <select name="report-issue" id="dropmenu-report" required>
+                            <option value="" disabled selected>Select an issue</option>
+                            <option value="inappropriate">Inappropriate content</option>
+                            <option value="false-info">False or misleading information</option>
+                            <option value="spam">Spam or irrelevant</option>
+                            <option value="copyright">Copyright infringement</option>
+                            <option value="web-error">Website error</option>
+                            <option value="other">Other</option>
+                        </select>
+                        
+                        <textarea name="report-details" maxlength="250" class="report-details" id="report-info" rows="10" placeholder="Describe the issue in detail..." required></textarea>
+                        <textarea name="report-details" maxlength="250" class="report-details" rows="1" placeholder="eg. johndoe@gmail.com" required></textarea>
+                      
+                        <div id="report-submit-cancel">
+                            <button type="button" class="report-btn" id="cancel-report-btn"><i class="fa-solid fa-xmark"></i></button>
+                            <p id="report-char-num"> 0/250 characters</p>
+                            <button type="submit" class="report-btn" id="submit-report-btn"><i class="fa-solid fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        <div id="tutor-iso-display-container">
+            <div id="top-tdc">
+                <div id="left-tdc">
+                    <header>Bachelor of Music</header>
+                    <header2>Seo Ji Won</header2>
+                    <div id="tutor-key">
+                        <div class="t-icon-desc"><div><i class="fa-solid fa-map-location-dot"></i></div><header3>Seoul High, Seoul</header3></div>
+                        <div class="t-icon-desc"><div><i class="fa-solid fa-graduation-cap"></i></div><header3>2nd Year</header3></div>
+                        <div class="t-icon-desc"><div><i class="fa-solid fa-coins"></i></div><header3>$22 p/h</header3></div>
+                        <div class="t-icon-desc" id="tdc-ratings">
+                        <span class="fa fa-star star-checked"></span>
+                        <span class="fa fa-star star-checked"></span>
+                        <span class="fa fa-star star-checked"></span>
+                        <span class="fa fa-star star-checked"></span>
+                        <span class="fa fa-star"></span>
+                        <header3>(21)</header3>
+                    </div>
+                    <div id="desc-book-ellip">
+
+                        <button id="tutor-key-book">Bookings</button>
+                        
+                        <i class="fa-solid fa-ellipsis" id="desc-ellipsis"></i>
+                        <div id="dropdown-menu" class="hidden">
+                            <ul>
+                                <li id="report-button">Report</li>
+                                <li><a href="mailto:petedaniel.lim@gmail.com">Send email</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                    
+                <div id="right-iso-tdc">
+                    <image id="right-tdc-img" src="images/seo-ji-won.jpg"></image>
+                    <div id="tdc-iso-icons">
+                        <i class="fa-solid fa-bookmark" id="bookmark-tdesc"></i>
+                        <iconify-icon icon="skill-icons:instagram"></iconify-icon>
+                        <iconify-icon icon="logos:facebook"></iconify-icon>
+                        <iconify-icon icon="devicon:linkedin"></iconify-icon>
+                        <iconify-icon icon="logos:google-gmail" style="font-size: 1.7vmin;"></iconify-icon>
+                    </div>
+
+                </div>
+            </div>
+            <div id="desc-tdc">
+                <p>Hi there! I’m Seo Ji Won, a 23-year-old music major at Seoul High, and I’m on a mission to bring fun and creativity to every music lesson. I’ve got years of experience in everything from piano to performance, and I’m here to make sure that your journey in music is as enjoyable as it is educational!
+                </br>
+                </br>
+                What You’ll Get with Me as Your Tutor:
+                <ul>
+                    <li>Instrument Mastery: From piano to strings, we’ll tackle the techniques and tricks of the trade together.</li>
+                    <li>Customized Lessons: Each session is tailored to your goals, with a balance of skill-building and creativity.</li>
+                    <li>Performance Confidence: We’ll build up your stage presence and learn to turn nerves into musical magic!</li>
+                    <li>Music Theory Made Simple: I’ll guide you through the foundations without the stuffy textbooks.</li>
+                    <li>Fun Exercises: Warm-ups, practice pieces, and maybe a few dance breaks to keep things lively!</li>
+                </ul>
+                </br>
+                Seo Ji Won has had: 25 Sessions
+                     </p>
+            </div>
+            <div id="bot-tdc">
+                <span class="tutor-rating-atr">Knowledgeable (21)</span>
+                <span class="tutor-rating-atr">Supportive (18)</span>
+                <span class="tutor-rating-atr">Adaptable (12)</span>
+                <span class="tutor-rating-atr">Enthusiastic (7)</span>
+                <span class="tutor-rating-atr">Clear Communicator (8)</span>
+                
+            </div>
+        </div>
+                    
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+        <footer>
+            <div class="f-top">
+                <div class="f-links" id="f-tutor-links">
+                    <h2>Tutors</h2>
+                    <li><a href="tutors.html">Find a Tutor</a></li>
+                    <li><a href="tutor-signup.html">Become a Tutor</a></li>
+                    <li><a href="hiw.html">How it Works</a></li>
+                </div>
+                <div class="f-links" id="f-resource-links">
+                    <h2>Resources</h2>
+                    <li><a href="resources.html">Find Resources</a></li>
+                    <li><a href="resource-vendor.html">Publish Yours</a></li>
+                    <li><a href="hiw.html">How it Works</a></li>
+                </div>
+                <div class="f-links" id="f-about-links">
+                    <h2>Contact</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div> 
+                <div id="f-social-media">
+                    <h2>Follow Us!</h2>
+                    <h3>Get in contact, stay up to date, and most importantly support our website by following one of our socials</h3>
+                    <div id="f-social-media-container">
+                        <a href=""><image src="images/instagram.png" class="social-media-image"></image></a>
+                        <a href=""><image src="images/facebook.png" class="social-media-image"></image></a>
+                        <a href=""><image src="images/linkedin.png" class="social-media-image"></image></a>
+                        <a href=""><image src="images/gmail.png" class="social-media-image"></image></a>
+                    </div>
+                </div>
+            </div>
+            <div class="f-bottom">
+                <image src="images/Learn4Less-Logo-tr.png" style="max-width: 10vmin;"></image>
+                <div>&copy; 2024 Learn4Less</div>
+            </div>
+            
+            
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <script src="https://kit.fontawesome.com/d1987fc318.js" crossorigin="anonymous"></script>
+        
+    </main>
+</body>
+</html>

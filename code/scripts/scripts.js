@@ -1,10 +1,8 @@
 window.addEventListener('load', function() {
     if (window.location.hash) {
-        // Scroll to the top if a hash is present in the URL
         window.scrollTo({
             top:0
         });
-        // Clear the hash from the URL
         window.history.pushState("", document.title, window.location.pathname);
     }
 });
@@ -20,23 +18,23 @@ document.addEventListener('DOMContentLoaded',function(){
         navContainer.style.backgroundColor=(`RGB(41,50,65, 0.5)`);
         document.addEventListener('scroll', function(){
         
-        scrollPosition = window.scrollY;
-        const scrollThreshold = 800;
-        let opacity=0.5;
-        const scrollTop = document.getElementById('scroll-top');
+            scrollPosition = window.scrollY;
+            const scrollThreshold = 800;
+            let opacity=0.5;
+            const scrollTop = document.getElementById('scroll-top');
         
 
-        if(scrollPosition<scrollThreshold){
+            if(scrollPosition<scrollThreshold){
             opacity= opacity + ((scrollPosition/scrollThreshold)/2);
 
-        }else{opacity=1;}
-        navContainer.style.backgroundColor=(`RGB(41,50,65, ${opacity})`);
-        scrollTop.style.opacity=(opacity-0.5)*2;
+            }else{opacity=1;}
+            navContainer.style.backgroundColor=(`RGB(41,50,65, ${opacity})`);
+            scrollTop.style.opacity=(opacity-0.5)*2;
 
-    });
-}
+        });
+    }
 
-
+    if(window.location.pathname.endsWith("index.html")||window.location.pathname.endsWith('tutors.html')){
         const imageTrackContainer = document.querySelector('.inner-track-container');
         console.log('Initialised Track Scrolls');
         console.log('viewportWidth is : '+ viewportWidth);
@@ -48,12 +46,7 @@ document.addEventListener('DOMContentLoaded',function(){
             imageTrackContainer.scrollLeft += viewportWidth/1.8;
             console.log('Scroll is Clicked!');
         });
-
-    
-
-
-
-    console.log("Do we achieve this stage?");
+    }
 
     if(window.location.pathname.endsWith('tutors.html')){
         const states = document.querySelectorAll('.states-select');
@@ -95,40 +88,47 @@ document.addEventListener('DOMContentLoaded',function(){
             ttc.style.display ='none';
             ftc.style.display= 'block';
         });
-        const ellipsis = document.getElementById('desc-ellipsis');
-        const dropdownMenu = document.getElementById('dropdown-menu');
-        
-        // Toggle dropdown visibility when ellipsis is clicked
+    }
+    const ellipsis = document.getElementById('desc-ellipsis');
+    const dropdownMenu = document.getElementById('dropdown-menu');
+    
+    if(ellipsis){
         ellipsis.addEventListener('click', (e) => {
             dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
             ellipsis.style.color ="#3d5a80";
-            // Position the dropdown relative to the ellipsis icon
+
             const rect = ellipsis.getBoundingClientRect();
             dropdownMenu.style.top = `${rect.bottom}px`;
             dropdownMenu.style.left = `${rect.left}px`;
         });
         
-        // Hide the dropdown if clicking outside
+
         document.addEventListener('click', (e) => {
             if (!ellipsis.contains(e.target) && !dropdownMenu.contains(e.target)) {
                 ellipsis.style.color ="#000";
                 dropdownMenu.style.display = 'none';
             }
         });
-
-
+    
+        const ftc = document.getElementById('ftc-tutors');
+        const tutorIso = document.getElementById('tutor-iso-display-container');
         const reportOverlay = document.getElementById('report-overlay');
         const reportBtn = document.getElementById('report-button');
         const cancelReport = document.getElementById('cancel-report-btn');
+
         reportBtn.addEventListener('click', function(){
             reportOverlay.style.display= 'block';
             dropdownMenu.style.display = 'none';
-            ftc.style.filter='blur(2px)';
-
-            const reportTextArea = document.getElementById('report-details');
+            if(ftc){
+                ftc.style.filter='blur(2px)';
+            }else if(tutorIso){
+                tutorIso.style.filter='blur(2px)';
+            }
+    
+            const reportTextArea = document.getElementById('report-info');
             const charText = document.getElementById('report-char-num');
             const maxChar = 250;
-
+    
             reportTextArea.addEventListener('input', function(){
                 const currentLength = reportTextArea.value.length;
                 charText.textContent= `${currentLength}/${maxChar} characters`;
@@ -137,20 +137,22 @@ document.addEventListener('DOMContentLoaded',function(){
                 }else{
                     charText.style.color='#000';
                 }
-
+    
             });
-
-
+    
+    
             cancelReport.addEventListener('click',function(){
                 reportOverlay.style.display='none';
-                ftc.style.filter='none';
+                if(ftc){
+                    ftc.style.filter='none';
+                }else if(tutorIso){
+                    tutorIso.style.filter='none';
+                }
             });
         });
 
-
-
-
-
     }
+    console.log("Do we achieve the end?");
+
 
 });

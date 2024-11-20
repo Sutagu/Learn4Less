@@ -91,7 +91,8 @@
                             <option value="other">Other</option>
                         </select>
                         
-                        <textarea name="report-details" maxlength="250" id="report-details" rows="10" placeholder="Describe the issue in detail..." required></textarea>
+                        <textarea name="report-details" maxlength="250" class="report-details" id="report-info" rows="10" placeholder="Describe the issue in detail..." required></textarea>
+                        <textarea name="report-details" maxlength="250" class="report-details" rows="1" placeholder="eg. johndoe@gmail.com" required></textarea>
                       
                         <div id="report-submit-cancel">
                             <button type="button" class="report-btn" id="cancel-report-btn"><i class="fa-solid fa-xmark"></i></button>
@@ -366,7 +367,7 @@
                                 <div id="dropdown-menu" class="hidden">
                                     <ul>
                                         <li id="report-button">Report</li>
-                                        <li>Open in new page</li>
+                                        <li><a href="tutor-isolate.html" target="_blank">Open in new page</a></li>
                                         <li><a href="mailto:petedaniel.lim@gmail.com">Send email</a></li>
                                     </ul>
                                 </div>

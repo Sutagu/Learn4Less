@@ -369,9 +369,16 @@ footer{
     background-color: #293241 ;
 }
 #ss-container{
-    justify-content: center;
+    justify-content: space-between;
     display:flex;
+    position: relative;
+    width:100%;
+   
 }
+#au-ss-map{
+    width:60%;
+}
+
 #features path{
     fill:#98c1d9;   
     stroke:#ffffff; 
@@ -384,8 +391,8 @@ footer{
 }
 #typewriter-state-container{
     position: absolute;
-    right:13%;
-    top:50%;
+    right:20%;
+    top:45%;
     text-align: right;
 }
 #typewriter-state-container h5{
@@ -514,6 +521,13 @@ footer{
     margin: 4% 0 2.5% 2.5%;
     overflow-y:auto;
     scrollbar-color: #98c1d9 #e0fbfc;
+}
+#tutor-iso-display-container{
+    background-color: #fff;
+    padding-top:5vh;
+    padding-bottom: 5vh;
+    padding-right:15%;
+    padding-left:15%;
 }
 .list-right-container{
     
@@ -658,7 +672,7 @@ button:hover{
 #desc-book-ellip{
     display:flex;
     margin-top:1.5vmin;
-    width:28%;
+    width:20vmin;
     justify-content: space-between;
     align-items: center;
     :hover{
@@ -785,10 +799,11 @@ button:hover{
 #dropmenu-report option{
     padding:0;
 }
-#report-details{
+.report-details{
     width:70%;
     font-size:1.7vmin;
     background-color: #e0fbfc;
+    resize:none;
     
 }
 #report-submit-cancel{
@@ -821,7 +836,24 @@ button:hover{
     margin-left:20%;
     margin-right:20%;
 }
-
+#right-iso-tdc{
+    display:flex;
+    flex-direction: column;
+}
+#right-tdc-img{
+    align-self: center;
+    width:15vmin;
+    height:15vmin;
+    margin-bottom:2vmin;
+    border-bottom: 1vmin solid #ee6c4d;
+    border-radius: 20px;
+}
+#tdc-iso-icons{
+    display:flex;
+    width:25vmin;
+    justify-content: space-evenly;
+    font-size:2.2vmin;
+}
 
 @keyframes typing{
     from{ width:0}
