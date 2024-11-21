@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Learn4Less">
+        <meta name="description" content=""> <!--TODO-->
+        <link rel="stylesheet" type="text/css" href="styles/styles.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        
+        <title>Learn4Less homepage</title>
+    </head>
+<body id="tutors-page">
+    <script type="text/javascript" src="scripts/scripts.js"></script>
+    
+    <nav class="nav-container" id="nav-container-sticky">
+        <div>
+            <a href="index.html"><img src="images/Learn4Less-Logotxt-tr.png" class="nav-logo"></img></a>            
+            <ul>
+                <li><a href="tutors.html">Tutors</a></li>
+                <li><a href="resources.html">Materials</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="login.html">Login</a></li>
+                <a href="bookmark.html"><img src="images/bookmark (1).png" class="nav-bookmarks" ></img></a>    
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div class="display-container-margin" id="resources-container">
+            <div id="left-resources-filter-container">
+                <div id="lrf-container">
+                    <h2 id="resource-filter-heading">Materials</h2>
+                    <form action="" method="POST" id="rf-form">
+                        <div id="search-bar">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="search-box" placeholder="eg. physics..">
+                        </div>
+                        <div class="filter-container">
+                            <i class="fa-solid fa-up-down"></i>
+                            <select name="listed" id="rfdropmenu-listed" class="rfdropmenu">
+                                <option value="recent">Recent</option>
+                                <option value="oldest">Oldest</option>
+                                <option value="high-price">Highest Price</option>
+                                <option value="low-price">Lowest Price</option>
+                            </select>
+                        </div>
+                        <div class="filter-container">
+                            <i class="fa-solid fa-box-archive"></i>
+                            <select name="condition" id="rfdropmenu-condition" class="rfdropmenu">
+                                <option value="condition-any">Condition: Any</option>
+                                <option value="new">New</option>
+                                <option value="used-new">Used but new</option>
+                                <option value="used">Used</option>
+                                <option value="Fair">Fair</option>
+                            </select>
+                        </div>
+                        <div id="price-range-parent-container">
+                            <h2>Price</h2>
+                            <div id="price-range-container">
+                                <span class="price-range" name="min-price-container"id="min-price-container">
+                                    <input type="number" placeholder="Min.">
+                                </span>
+                                <h3>-</h3>
+                                <span class="price-range" name="max-price-container" id="max-price-container">
+                                    <input type="number" placeholder="Max.">
+
+                                </span>
+                            </div>
+                            
+                        </div>
+                        <div class="filter-container">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <select name="state" id="rfdropmenu-state" class="rfdropmenu">
+                                <option value="state-any">State: Any</option>
+                                <option value="sa">SA</option>
+                                <option value="wa">WA</option>
+                                <option value="nsw">NSW</option>
+                                <option value="vic">VIC</option>
+                                <option value="qld">QLD</option>
+                            </select>
+                            
+                        </div>
+                        <div class="filter-container">
+                            <i class="fa-solid fa-landmark"></i>
+                            <select name="university" id="rfdropmenu-university" class="rfdropmenu">
+                                <option value="uni-any">University: Any</option>
+                                <option value="flinders-uni">Flinders University</option>
+                                <option value="adelaide-uni">Adelaide University</option>
+                                <option value="uni-sa">University SA</option>
+                            </select>
+
+                        </div>
+                        <button id="create-list-btn">Create a Listing <i class="fa-regular fa-pen-to-square"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div id="right-resources-items-container"></div>
+        </div>
+        <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+        <footer>
+            <div class="f-top">
+                <div class="f-links" id="f-tutor-links">
+                    <h2>Tutors</h2>
+                    <li><a href="tutors.html">Find a Tutor</a></li>
+                    <li><a href="tutor-signup.html">Become a Tutor</a></li>
+                    <li><a href="hiw.html">How it Works</a></li>
+                </div>
+                <div class="f-links" id="f-resource-links">
+                    <h2>Materials</h2>
+                    <li><a href="resources.html">Find Materials</a></li>
+                    <li><a href="resource-vendor.html">Publish Yours</a></li>
+                    <li><a href="hiw.html">How it Works</a></li>
+                </div>
+                <div class="f-links" id="f-about-links">
+                    <h2>Contact</h2>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </div> 
+                <div id="f-social-media">
+                    <h2>Follow Us!</h2>
+                    <h3>Get in contact, stay up to date, and most importantly support our website by following one of our socials</h3>
+                    <div id="f-social-media-container">
+                        <a href=""><image src="images/instagram.png" class="social-media-image"></image></a>
+                        <a href=""><image src="images/facebook.png" class="social-media-image"></image></a>
+                        <a href=""><image src="images/linkedin.png" class="social-media-image"></image></a>
+                        <a href=""><image src="images/gmail.png" class="social-media-image"></image></a>
+                    </div>
+                </div>
+            </div>
+            <div class="f-bottom">
+                <image src="images/Learn4Less-Logo-tr.png" style="max-width: 10vmin;"></image>
+                <div>&copy; 2024 Learn4Less</div>
+            </div>
+            
+            
+        </footer>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>AOS.init();</script>
+        <script src="https://kit.fontawesome.com/d1987fc318.js" crossorigin="anonymous"></script>
+        
+    </main>
+</body>
+</html>
