@@ -152,6 +152,31 @@ document.addEventListener('DOMContentLoaded',function(){
         });
 
     }
+
+    if(window.location.pathname.endsWith('resources.html')){
+        const filterBtn=document.getElementById('filter-settings-btn');
+        const backBtn = document.getElementById('lrf-back-btn');
+        const leftWindow = document.getElementById('left-resources-filter-container');
+
+        filterBtn.addEventListener('click', function(){
+            leftWindow.style.display='block';
+
+        });
+        backBtn.addEventListener('click', function(){
+            leftWindow.style.display='none';
+
+        });
+        window.addEventListener('resize', function(){
+            if(this.window.innerWidth>1000 && leftWindow.style.display=='none'){
+                leftWindow.style.display='block';
+            }
+        });
+        window.addEventListener('resize', function(){
+            if(this.window.innerWidth<=1000 && leftWindow.style.display=='block'){
+                leftWindow.style.display='none';
+            }
+        });
+    }
     console.log("Do we achieve the end?");
 
 

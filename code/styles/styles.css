@@ -874,34 +874,91 @@ button:hover{
 #lrf-container{
     margin:10%;
     height:90%;
+    position: relative;
 }
 
 
 @media only screen and (min-width: 1400px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        height:80%;
+
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 90px;  
+        column-gap: 90px;
+        
+    }
+    .grid-item{
+        width:350px;
+        height:420px;
+        
+    }
+
+    .market-grid-item{
+        width:100%;
+        height:80%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #000);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-bottom: 10px;
+        font-size:25px;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:24px;
+        letter-spacing:4px;
+        margin:0;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        letter-spacing:3px;
+        margin:0;
+        font-size:18px;
+    }
+    
+    #filter-settings-btn{
+        display:none;
+    }
+    #lrf-back-btn{
+        display:none;
+    }
     #resource-filter-heading{
-        font-size:45px;
-        line-height: 35px;
+        font-size:65px;
+        line-height: 55px;
     }
     #search-bar{
         display:flex;
         border-radius: 18px;
         background-color: #3D5A80;
         width: 95%;;
-        height:64px;
+        height:84px;
         align-items: center;
-        margin-bottom: 50px;
+        margin-bottom: 70px;
     }
     #search-bar input{
         background: none;
         border:none;
-        padding:17px;
+        padding:20px;
         width:80%;
         color:#fff;
-        font-size:18px;
+        font-size:24px;
     }
     #search-bar input::placeholder{
         color:#d3d3d3;
-        font-size:18px;
+        font-size:24px;
         
     }
     #search-bar i{
@@ -917,26 +974,26 @@ button:hover{
         margin-bottom: 34px;
     }
     .filter-container i{
-        font-size:28px;
+        font-size:34px;
         width:28px;
         text-align: center;
     }
     .rfdropmenu{
-        height: 63px;
+        height: 84px;
         width: 75%;
         padding-left:5%;
         background-color: #3d5a80;
         border:none;
         border-radius:18px;
         color:#fff;
-        font-size:19px;
+        font-size:24px;
     }
     #price-range-parent-container h2{
-        font-size:30px;
+        font-size:38px;
     }
     #price-range-parent-container{
         width:95%;
-        margin-bottom:34px;
+        margin-bottom:54px;
     }
     #price-range-container{
         display:flex;
@@ -948,41 +1005,131 @@ button:hover{
         width:90%;
         padding-left:10%;
         background-color: #3d5a80;
-        height:63px;
+        height:84px;
         border-radius: 18px;
         border:none;
         color:#fff;
-        font-size:18px;
+        font-size:24px;
     }
     #price-range-container span input::placeholder{
         color:#fff;
-        font-size:18px;
+        font-size:24px;
 
     }
     #create-list-btn{
         position: relative;
-        margin-top:50px;
+        margin-top:70px;
         width:92%;
         padding:2vmin;
         background-color: #ee6c4d;
         color:#fff;
         border-radius:18px;
         border:none;
-        font-size:25px;
+        font-size:24px;
         text-align: left;
     }
 }
+@media only screen and (min-width:1771px) and (max-width: 2400px){
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        height:80%;
+     
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 90px;  
+        column-gap: 90px;
+        
+    }
+    .grid-item{
+        width:350px;
+        height:420px;
+    }
+}
+@media only screen and (min-width:1400px) and (max-width:1771px){
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        height:80%;
+      
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 90px;  
+        column-gap: 90px;
+        
+    }
+    .grid-item{
+        width:350px;
+        height:420px;
+    }
+}
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        height:90%;
+     
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 50px;  
+        column-gap: 50px;
+        
+    }
+    .grid-item{
+        width:300px;
+        height:370px;
+    
+    }
+    .market-grid-item{
+        width:100%;
+        height:80%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #000);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-bottom: 10px;
+        font-size:20px;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:19px;
+        letter-spacing:4px;
+        margin:0;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        letter-spacing:3px;
+        margin:0;
+        font-size:16px;
+    }
+    #filter-settings-btn{
+        display:none;
+    }
+    #lrf-back-btn{
+        display:none;
+    }
     #resource-filter-heading{
-        font-size:30px;
-        line-height: 25px;
+        font-size:40px;
+        line-height: 35px;
     }
     #search-bar{
         display:flex;
         border-radius: 18px;
         background-color: #3D5A80;
         width: 95%;;
-        height:42px;
+        height:62px;
         align-items: center;
         margin-bottom: 36px;
     }
@@ -992,11 +1139,11 @@ button:hover{
         padding:12px;
         width:80%;
         color:#fff;
-        font-size:13px;
+        font-size:20px;
     }
     #search-bar input::placeholder{
         color:#d3d3d3;
-        font-size:13px;
+        font-size:20px;
         
     }
     #search-bar i{
@@ -1009,44 +1156,42 @@ button:hover{
         width: 95%;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 24px;
+        margin-bottom: 40px;
     }
     .filter-container i{
-        font-size:20px;
-        width:20px;
-        text-align: center;
+        display:none;
     }
     .rfdropmenu{
-        height: 45px;
-        width: 75%;
+        height: 62px;
+        width: 100%;
         padding-left:5%;
         background-color: #3d5a80;
         border:none;
         border-radius:18px;
         color:#fff;
-        font-size:14px;
+        font-size:20px;
     }
     #price-range-parent-container h2{
-        font-size:21px;
+        font-size:24px;
     }
     #price-range-parent-container{
         width:95%;
-        margin-bottom:17px;
+        margin-bottom:24px;
     }
  
     #price-range-container span input{
         width:90%;
         padding-left:10%;
         background-color: #3d5a80;
-        height:45px;
+        height:62px;
         border-radius: 18px;
         border:none;
         color:#fff;
-        font-size:13px;
+        font-size:20px;
     }
     #price-range-container span input::placeholder{
         color:#fff;
-        font-size:13px;
+        font-size:20px;
 
     }
     #create-list-btn{
@@ -1058,39 +1203,127 @@ button:hover{
         color:#fff;
         border-radius:18px;
         border:none;
-        font-size:18px;
+        font-size:20px;
         text-align: left;
+    }
+    #create-list-btn i{
+        display:none;
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 1000px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        height:80%;
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 50px;  
+        column-gap: 50px;
+        
+    }
+    .grid-item{
+        width:300px;
+        height:370px;
+    
+    }
+    .market-grid-item{
+        width:100%;
+        height:80%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #000);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        line-height: 25px;
+        margin-bottom: 15px;
+        font-size:21px;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:19px;
+        letter-spacing:4px;
+        margin:0;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        letter-spacing:3px;
+        margin:0;
+        font-size:16px;
+    }
+    #filter-settings-btn{
+        font-size: 40px;
+        margin:5%;
+    }
+    #filter-settings-btn:hover{
+        cursor: pointer;
+    }
+    #lrf-back-btn{
+        display:block;
+        color:#fff;
+        position:absolute;
+        font-size:25px;
+        top: 15px;
+        right:0;
+    }
+    #lrf-back-btn:hover{
+        cursor:pointer;
+    }
+    #right-resources-items-container{
+        width:100%;
+    }
+    #left-resources-filter-container{
+        position:absolute;
+        display:none;
+        width:90%;
+        height:75%;
+        top:9%;
+        left:5%;
+        z-index: 1000;
+        background-color: #293241;
+        border-top:none;
+        filter: drop-shadow(0 0 30px #000);
+    }
+    #lrf-container{
+        position:relative;
+    }
     #resource-filter-heading{
-        font-size:1.9vmin;
-        line-height: 1.5vmin;
+        font-size:60px;
+        line-height: 50px;
     }
     #search-bar{
         display:flex;
         border-radius: 18px;
         background-color: #3D5A80;
         width: 95%;;
-        height:3vmin;
+        height: 80px;
         align-items: center;
-        margin-bottom: 3vmin;
+        margin-bottom: 60px;
     }
     #search-bar input{
         background: none;
         border:none;
-        padding:0.7vmin;
+        padding:30px;
         width:80%;
         color:#fff;
-        font-size:1.3vmin;
+        font-size:25px;
     }
     #search-bar input::placeholder{
         color:#d3d3d3;
-        font-size:1.3vmin;
+        font-size:25px;
         
     }
     #search-bar i{
-        display:none;
+        display:block;
+        margin-left:20px;
     }
     .filter-container{
         display:flex;
@@ -1098,57 +1331,65 @@ button:hover{
         width: 95%;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 1.8vmin;
+        margin-bottom: 30px;
     }
     .filter-container i{
-        display:none;
+        font-size:34px;
+        width:28px;
+        text-align: center;
+
     }
     .rfdropmenu{
-        height: 3.5vmin;
+        height: 80px;
         width: 90%;
         padding-left:5%;
         background-color: #3d5a80;
         border:none;
         border-radius:18px;
         color:#fff;
-        font-size:1.5vmin;
+        font-size:25px;
     }
     #price-range-parent-container h2{
-        font-size:1.6vmin;
+        font-size:35px;
+        line-height: 35px;
     }
     #price-range-parent-container{
         width:95%;
-        margin-bottom:1.4vmin;
+        margin-bottom:30px;
     }
  
     #price-range-container span input{
         width:90%;
         padding-left:10%;
         background-color: #3d5a80;
-        height:3.5vmin;
+        height:80px;
         border-radius: 18px;
         border:none;
         color:#fff;
-        font-size:1.1vmin;
+        font-size:25px;
     }
     #price-range-container span input::placeholder{
         color:#fff;
-        font-size:1.3vmin;
+        font-size:25px;
 
     }
     #create-list-btn{
         position: relative;
         margin-top:3vmin;
-        width:92%;
-        padding:2vmin;
+        width:95%;
+        padding: 30px;
         
         background-color: #ee6c4d;
         color:#fff;
         border-radius:18px;
         border:none;
-        font-size:1.4vmin;
+        font-size:25px;
         text-align: left;
     }
+}
+
+.grid-item:hover{
+    cursor: pointer;
 }
 #price-range-container{
     display:flex;
