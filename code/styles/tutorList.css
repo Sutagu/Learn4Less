@@ -1,0 +1,595 @@
+#ftc-tutors{
+    justify-items: center;
+
+}
+#filter-tutor-container{
+    width:80%;
+    
+}
+#filter-dropmenu-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:92.5%;
+    height:8%;
+    margin: 2% 2.5% 0 2.5%;
+}
+
+.filter-dropmenu{
+    background-color:#3d5a80;
+    padding: 1vmin;
+    border-radius: 12px;
+    border: 0.1vmin solid #fff;
+    overflow: hidden;
+}
+.filter-dropmenu button{
+    border:none;
+    background: none;
+    color: #ee6c4d;   
+}
+.dropmenu{
+    color: #e0fbfc ;
+    background: none;
+    border: none;
+}
+.dropmenu option{
+    background-color:#3d5a80c7;
+}
+#tutor-search{
+    background-color:#fff;
+    border: none;
+    color:#8b8b8b;
+    text-align: right;
+    border-radius: 9px;
+    }
+#tsc-container{
+    float: left;
+    position: relative;
+    margin: 2.5% 0 2.5% 2.5%;
+    width:30%;
+    height:80%;
+    text-align: center;
+
+}
+#tutor-select-container{
+    width:100%;
+    height:95%;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    border-radius: 12px;
+    scrollbar-color: #98c1d9 #e0fbfc;
+    overflow-x:hidden;
+}
+#left-tdc{
+    width:95%;
+    max-width: 95%;
+}
+#tutor-select{
+    display:flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+}
+.tutor-list{
+    display:flex;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #98c1d9 70%, #3d5a80 30%);
+    background-size:100%;
+}
+.tutor-list:hover{
+    cursor: pointer;
+    animation: gradient-card 0.3s ease-in forwards;
+}
+#tutor-display-container{
+    float:left;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.8);
+    overflow-y:auto;
+    scrollbar-color: #98c1d9 #e0fbfc;
+    height:73%;
+    width:60%;
+    margin: 4% 0 2.5% 2.5%;
+}
+#top-tdc{
+    margin: 5%;
+    display:flex; 
+}
+.fa-bars{
+    display:none;
+}
+#search-list-btn{
+    display:none;
+}
+#top-tdc header{
+    color:#000;
+    text-align:left;
+}
+#top-tdc header2{
+    color: #5c5c5c;
+}
+#tutor-key{
+    margin-top:2vmin;
+}
+#tutor-key header3{
+    color: #000;
+    font-weight:500;
+}
+.t-icon-desc{
+    text-align: left;
+    display:flex;   
+}
+.t-icon-desc i{
+    color: #000;
+}
+#tutor-key-book{
+    display:flexbox;
+    justify-content: center;
+    text-align: center;
+    border-radius: 12px;
+    background-color:#98c1d9;
+    border:none;
+    color: #e0fbfc;
+
+}
+button:hover{
+    cursor: pointer;
+    font-weight:bold;
+}
+#bookmark-tdesc{
+    font-size:2.4vmin;
+}
+#desc-book-ellip{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    :hover{
+        cursor: pointer;
+    }
+}
+#desc-ellipsis{
+    position:static;
+    color: #000;
+}
+.list-portrait{
+    border-bottom: 3px solid #ee6c4d;
+    border-radius: 18px;
+    display:block;
+}
+.list-left-container h2{
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    color: #000 ;
+}
+.list-left-container h3{
+    -webkit-line-clamp: 2;
+    color:#323952;
+}
+.list-left-container h4{
+    color: #000;
+    font-weight:normal;
+}
+.list-left-container p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow:hidden;
+    color:#293241;
+}
+.fa-ellipsis{
+    color:#ee6c4d;
+    position: absolute;
+}
+
+#tdc-icons{
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+#tdc-icons i,iconify-icon:hover{
+    cursor: pointer;
+}
+#tdc-ratings{
+    display:flexbox;
+    gap:0.7vmin;
+    justify-content: left;
+    align-items: center;
+}
+#bot-tdc{
+    border-top:3px solid #000;
+    margin:5%;
+    display:flex;
+    justify-content: space-between;
+}
+.tutor-rating-atr{
+    background-color: #98c1d9;
+    border-radius: 18px;
+    color:#3d5a80;
+}
+#desc-tdc{
+    width: 90%;
+    max-width:90%;
+    margin:5%;
+    line-height: 3vmin;
+    font-size:1.6vmin;
+}
+@media only screen and (min-width:2400px){
+    .filter-dropmenu button{
+        font-size: 20px;   
+    }
+    .dropmenu{
+        color: #e0fbfc ;
+        background: none;
+        border: none;
+        font-size: 24px;
+        height:30px;
+    }
+    #tutor-search{
+        width:280px;
+        height:30px;
+        font-size:1.3vmin;
+    }
+   
+    .tutor-list{
+        width:550px;
+        height:450px;
+        margin:5%;
+    }
+    #top-tdc header{
+        font-weight:700;
+        font-size:50px;
+        letter-spacing: 1px;
+    }
+    #top-tdc header2{
+        font-size:45px;
+        font-weight:700;
+    }
+    .t-icon-desc{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .t-icon-desc .fa-star{
+        font-size: 18px;
+    }
+    .t-icon-desc div{
+        width:50px;
+        margin-right:25px;
+    }
+    #tutor-key-book{
+        padding: 20px;
+        width:230px;
+        font-size:24px;
+        letter-spacing: 2px;
+    }
+    #bookmark-tdesc{
+        font-size:35px;
+    }
+    #desc-book-ellip{
+        margin-top:30px;
+        width:300px;
+    }
+    #tdc-icons{
+        gap:30px;
+        font-size:34px;
+    }
+    .tutor-rating-atr{
+        padding:20px;
+        max-width:200px;
+        font-size:18px;
+        margin-top: 3%;
+    }
+    .list-portrait{
+        width:140px;
+        height:140px;
+        border-bottom: 3px solid #ee6c4d;
+        border-radius: 18px;
+        margin-bottom: 20px;
+        display:block;
+    }
+    .list-left-container h2{
+        font-size:3vmin;
+        margin-bottom:0;
+        margin-top:0;
+        line-height: 3.3vmin;
+        padding-top:1vmin;
+    }
+    .fa-ellipsis{
+        font-size: 24px;
+        bottom:50px;
+        right:70px;
+    }
+    .list-left-container h3{
+        font-weight: normal;
+        margin-top:0.5vmin;
+        font-size:1.4vmin;
+    }
+    .list-left-container h4{
+        font-size: 2.2vmin;
+        margin-bottom: 0;
+
+    }
+    .list-left-container p{
+        font-size: 1.4vmin;
+        letter-spacing: 0.1vmin;
+        line-height: 2vmin;
+    }
+    #desc-tdc{
+        width: 90%;
+        max-width:90%;
+        margin:5%;
+        line-height: 45px;
+        font-size:24px;
+    }
+}
+@media only screen and (min-width:1800px) and (max-width:2400px){
+    .filter-dropmenu button{
+        font-size: 20px;   
+    }
+    .dropmenu{
+        color: #e0fbfc ;
+        background: none;
+        border: none;
+        font-size: 20px;
+        height:30px;
+    }
+    #tutor-search{
+        width:200px;
+        height:30px;
+        font-size:18px;
+    }
+   
+    .tutor-list{
+        width:400px;
+        height:350px;
+        margin:5%;
+    }
+    #top-tdc header{
+        font-weight:700;
+        font-size:50px;
+        letter-spacing: 1px;
+    }
+    #top-tdc header2{
+        font-size:45px;
+        font-weight:700;
+    }
+    .t-icon-desc{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .t-icon-desc .fa-star{
+        font-size: 18px;
+    }
+    .t-icon-desc div{
+        width:50px;
+        margin-right:25px;
+    }
+    #tutor-key-book{
+        padding: 20px;
+        width:230px;
+        font-size:24px;
+        letter-spacing: 2px;
+    }
+    .list-portrait{
+        width:80px;
+        height:80px;
+        border-bottom: 3px solid #ee6c4d;
+        border-radius: 18px;
+        margin-bottom: 20px;
+        display:block;
+    }
+    .list-left-container h2{
+        font-size: 30px;
+        margin-bottom:0;
+        margin-top:0;
+        line-height: 30px;
+        padding-top:20px;
+    }
+    .fa-ellipsis{
+        font-size: 24px;
+        bottom:50px;
+        right:50px;
+    }
+    .list-left-container h3{
+        font-weight: normal;
+        margin-top:0.5vmin;
+        font-size:20px;
+    }
+    .list-left-container h4{
+        font-size: 24px;
+        margin-bottom: 0;
+
+    }
+    .list-left-container p{
+        font-size: 18px;
+        letter-spacing: 0.1vmin;
+        line-height: 2vmin;
+        -webkit-line-clamp: 3;
+    }
+    #bookmark-tdesc{
+        font-size:35px;
+    }
+    #desc-book-ellip{
+        margin-top:30px;
+        width:300px;
+    }
+    #tdc-icons{
+        gap:30px;
+        font-size:34px;
+    }
+    .tutor-rating-atr{
+        padding:15px;
+        max-width:150px;
+        font-size:14px;
+        margin-top: 3%;
+    }
+    #desc-tdc{
+        width: 90%;
+        max-width:90%;
+        margin:5%;
+        line-height: 45px;
+        font-size:24px;
+    }
+}
+@media only screen and (min-width:1000px) and (max-width:1800px){
+    .filter-dropmenu button{
+        display:none;   
+    }
+    #filter-dropmenu-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        gap:50px;
+        width:20%;
+        height:80%;
+        float:left;
+        background-color: #1c232f;
+        border-radius: 18px;
+        padding:5%;
+    }
+    #tsc-container{
+        display:block;
+        width:60%;
+        height:90%;
+        float:right;
+        background-color: #1c232f;
+        border-radius: 18px;
+    }
+    #search-list-btn{
+        display:block;
+        background-color:#ee6c4d;
+        border:none;
+        color:#fff;
+        border-radius: 18px;
+        font-size:24px;
+        letter-spacing: 1px;
+        width:130%;
+        height:7%;
+    }
+    .dropmenu{
+        color: #e0fbfc ;
+        background: none;
+        font-size: 20px;
+        height:40px;
+        width:100%;
+    }
+    .filter-dropmenu{
+        border:none;
+        width:120%;
+        height:40px;
+    }
+    #tutor-search{
+        width:100%;
+        height:40px;
+        font-size:18px;
+    }
+    #top-tdc{
+        width:80%;
+    }
+    #tutor-display-container{
+        width:90%;
+        height:90%;
+        position:relative;
+        display:none;
+    }
+    .fa-bars{
+        color:#000;
+        font-size:34px;
+        display:block;
+        margin-left:5%;
+        margin-top:5%;
+    }
+    .fa-bars:hover{
+        cursor: pointer;
+    }
+    .tutor-list{
+        width:80%;
+        height:350px;
+        margin:5%;
+    }
+    #top-tdc header{
+        font-weight:700;
+        font-size:50px;
+        letter-spacing: 1px;
+    }
+    #top-tdc header2{
+        font-size:45px;
+        font-weight:700;
+    }
+    .t-icon-desc{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .t-icon-desc .fa-star{
+        font-size: 18px;
+    }
+    .t-icon-desc div{
+        width:50px;
+        margin-right:25px;
+    }
+    #tutor-key-book{
+        padding: 20px;
+        width:230px;
+        font-size:24px;
+        letter-spacing: 2px;
+    }
+    .list-portrait{
+        width:80px;
+        height:80px;
+        border-bottom: 3px solid #ee6c4d;
+        border-radius: 18px;
+        margin-bottom: 20px;
+        display:block;
+    }
+    .list-left-container h2{
+        font-size: 30px;
+        margin-bottom:0;
+        margin-top:0;
+        line-height: 30px;
+        padding-top:20px;
+    }
+    .fa-ellipsis{
+        font-size: 0;
+        bottom:50px;
+        right:50px;
+    }
+    .list-left-container h3{
+        font-weight: normal;
+        margin-top:0.5vmin;
+        font-size:20px;
+    }
+    .list-left-container h4{
+        font-size: 24px;
+        margin-bottom: 0;
+
+    }
+    .list-left-container p{
+        font-size: 18px;
+        letter-spacing: 0.1vmin;
+        line-height: 2vmin;
+        -webkit-line-clamp: 3;
+    }
+    #bookmark-tdesc{
+        font-size:35px;
+    }
+    #desc-book-ellip{
+        margin-top:30px;
+        width:300px;
+    }
+    #tdc-icons{
+        gap:30px;
+        font-size:34px;
+    }
+    .tutor-rating-atr{
+        padding:1vmin;
+        max-width:13vmin;
+        font-size:1.2vmin;
+        margin-top: 3%;
+    }
+    #desc-tdc{
+        width: 90%;
+        max-width:90%;
+        margin:5%;
+        line-height: 45px;
+        font-size:24px;
+    }
+}

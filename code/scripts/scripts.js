@@ -53,9 +53,7 @@ document.addEventListener('DOMContentLoaded',function(){
         console.log("within path of tutors.html");
         const ss = document.getElementById('ss-tutors');
         const ttc = document.getElementById('ttc-tutors');
-        const ftc = document.getElementById('ftc-tutors');
         const trackText = document.getElementById('state-featured-tutor');
-        const filterMore = document.getElementById('view-more-tutor');
 
         states.forEach(button =>{
             
@@ -83,10 +81,6 @@ document.addEventListener('DOMContentLoaded',function(){
                 }
                 
             })
-        });
-        filterMore.addEventListener('click', () =>{
-            ttc.style.display ='none';
-            ftc.style.display= 'block';
         });
     }
     const ellipsis = document.getElementById('desc-ellipsis');
@@ -175,6 +169,29 @@ document.addEventListener('DOMContentLoaded',function(){
             if(this.window.innerWidth<=1000 && leftWindow.style.display=='block'){
                 leftWindow.style.display='none';
             }
+        });
+    }
+
+    if(window.location.pathname.endsWith('tutorList.html')){
+        const ListBackBtn = document.getElementById('tutor-list-back');
+        const tutorDisplay = document.getElementById('tutor-display-container');
+        const tutorList = document.getElementById('tsc-container');
+        const tutorFilter = document.getElementById('filter-dropmenu-container');
+        const tutorListItems = document.querySelectorAll('.tutor-list');
+        
+        tutorListItems.forEach(itemChoice =>{
+            itemChoice.addEventListener('click', function(){
+                tutorList.style.display='none';
+                tutorFilter.style.display='none';
+                tutorDisplay.style.display='block';
+                console.log('Item choice has been made');
+
+                ListBackBtn.addEventListener('click', function(){
+                    tutorList.style.display='block';
+                    tutorFilter.style.display='block';
+                    tutorDisplay.style.display='none';
+                });
+            });
         });
     }
     console.log("Do we achieve the end?");
