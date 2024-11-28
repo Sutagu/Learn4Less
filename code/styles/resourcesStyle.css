@@ -1,0 +1,854 @@
+@media only screen and (min-width: 3000px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        height:80%;
+
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 3vmin;  
+        column-gap: 3vmin;
+        
+    }
+    .grid-item{
+        width:20vmin;
+        height:25vmin;
+        
+    }
+
+    .market-grid-item{
+        width:100%;
+        height:80%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #3b5061);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-bottom: 1vmin;
+        font-size:1.5vmin;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:1.6vmin;
+        letter-spacing:4px;
+        margin:0;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        letter-spacing:3px;
+        margin:0;
+        font-size:1.4vmin;
+    }
+    
+    #filter-settings-btn{
+        display:none;
+    }
+    #lrf-back-btn{
+        display:none;
+    }
+    #resource-filter-heading{
+        font-size:3.5vmin;
+        line-height: 3.5vmin;
+    }
+    #search-bar{
+        display:flex;
+        border-radius: 18px;
+        background-color: #3D5A80;
+        width: 95%;;
+        height:5vmin;
+        align-items: center;
+        margin-bottom: 3vmin;
+    }
+    #search-bar input{
+        background: none;
+        border:none;
+        padding:1vmin;
+        width:80%;
+        color:#fff;
+        font-size:1.6vmin;
+    }
+    #search-bar input::placeholder{
+        color:#d3d3d3;
+        font-size:1.6vmin;
+        
+    }
+    #search-bar i{
+        font-size:1.3vmin;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .filter-container{
+        display:flex;
+        color: #fff;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3vmin;
+    }
+    .filter-container i{
+        font-size:2.5vmin;
+        width:2vmin;
+        text-align: center;
+    }
+    .rfdropmenu{
+        height: 5vmin;
+        width: 75%;
+        padding-left:5%;
+        background-color: #3d5a80;
+        border:none;
+        border-radius:18px;
+        color:#fff;
+        font-size:1.6vmin;
+    }
+    #price-range-parent-container h2{
+        font-size:2.3vmin;
+        
+    }
+    #price-range-parent-container{
+        width:95%;
+        margin-bottom:3vmin;
+    }
+    #price-range-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    #price-range-container span input{
+        width:90%;
+        padding-left:10%;
+        background-color: #3d5a80;
+        height:5vmin;
+        border-radius: 18px;
+        border:none;
+        color:#fff;
+        font-size:1.5vmin;
+    }
+    #price-range-container span input::placeholder{
+        color:#fff;
+        font-size:1.5vmin;
+
+    }
+    #create-list-btn{
+        position: relative;
+        margin-top:70px;
+        width:92%;
+        padding:2vmin;
+        background-color: #ee6c4d;
+        color:#fff;
+        border-radius:18px;
+        border:none;
+        font-size:1.8vmin;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 1400px) and (max-width:3000px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto auto auto;
+        height:80%;
+
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 90px;  
+        column-gap: 90px;
+        
+    }
+    .grid-item{
+        width:350px;
+        height:420px;
+        
+    }
+
+    .market-grid-item{
+        width:100%;
+        height:80%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #3b5061);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-bottom: 10px;
+        font-size:25px;
+        line-height: 25px;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:24px;
+        letter-spacing:4px;
+        margin:0;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        letter-spacing:3px;
+        margin:0;
+        font-size:18px;
+    }
+    
+    #filter-settings-btn{
+        display:none;
+    }
+    #lrf-back-btn{
+        display:none;
+    }
+    #resource-filter-heading{
+        font-size:65px;
+        line-height: 55px;
+    }
+    #search-bar{
+        display:flex;
+        border-radius: 18px;
+        background-color: #3D5A80;
+        width: 95%;;
+        height:5vh;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    #search-bar input{
+        background: none;
+        border:none;
+        padding:20px;
+        width:80%;
+        color:#fff;
+        font-size:24px;
+    }
+    #search-bar input::placeholder{
+        color:#d3d3d3;
+        font-size:24px;
+        
+    }
+    #search-bar i{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .filter-container{
+        display:flex;
+        color: #fff;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .filter-container i{
+        font-size:34px;
+        width:28px;
+        text-align: center;
+    }
+    .rfdropmenu{
+        height: 5vh;
+        width: 75%;
+        padding-left:5%;
+        background-color: #3d5a80;
+        border:none;
+        border-radius:18px;
+        color:#fff;
+        font-size:24px;
+    }
+    #price-range-parent-container h2{
+        font-size:38px;
+    }
+    #price-range-parent-container{
+        width:95%;
+        margin-bottom:5%;
+    }
+    #price-range-container{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+ 
+    #price-range-container span input{
+        width:90%;
+        padding-left:10%;
+        background-color: #3d5a80;
+        height:5vh;
+        border-radius: 18px;
+        border:none;
+        color:#fff;
+        font-size:24px;
+    }
+    #price-range-container span input::placeholder{
+        color:#fff;
+        font-size:24px;
+
+    }
+    #create-list-btn{
+        position: relative;
+        
+        width:92%;
+        padding:2vmin;
+        background-color: #ee6c4d;
+        color:#fff;
+        border-radius:18px;
+        border:none;
+        font-size:24px;
+        text-align: left;
+    }
+}
+@media only screen and (min-width:1771px) and (max-width: 2400px){
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto auto;
+        height:80%;
+     
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 90px;  
+        column-gap: 90px;
+        
+    }
+    .grid-item{
+        width:350px;
+        height:420px;
+    }
+}
+@media only screen and (min-width:1400px) and (max-width:1771px){
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        height:80%;
+      
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 90px;  
+        column-gap: 90px;
+        
+    }
+    .grid-item{
+        width:350px;
+        height:420px;
+    }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        height:90%;
+     
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 50px;  
+        column-gap: 50px;
+        
+    }
+    .grid-item{
+        width:300px;
+        height:370px;
+    
+    }
+    .market-grid-item{
+        width:100%;
+        height:80%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #3b5061);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        margin-bottom: 10px;
+        font-size:20px;
+        line-height: 20px;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:19px;
+        letter-spacing:4px;
+        margin:0;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        letter-spacing:3px;
+        margin:0;
+        font-size:16px;
+    }
+    #filter-settings-btn{
+        display:none;
+    }
+    #lrf-back-btn{
+        display:none;
+    }
+    #resource-filter-heading{
+        font-size:40px;
+        line-height: 35px;
+    }
+    #search-bar{
+        display:flex;
+        border-radius: 18px;
+        background-color: #3D5A80;
+        width: 95%;;
+        height:5vh;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    #search-bar input{
+        background: none;
+        border:none;
+        padding:12px;
+        width:80%;
+        color:#fff;
+        font-size:20px;
+    }
+    #search-bar input::placeholder{
+        color:#d3d3d3;
+        font-size:20px;
+        
+    }
+    #search-bar i{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .filter-container{
+        display:flex;
+        color: #fff;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .filter-container i{
+        display:none;
+    }
+    .rfdropmenu{
+        height: 5vh;
+        width: 100%;
+        padding-left:5%;
+        background-color: #3d5a80;
+        border:none;
+        border-radius:18px;
+        color:#fff;
+        font-size:20px;
+    }
+    #price-range-parent-container h2{
+        font-size:24px;
+    }
+    #price-range-parent-container{
+        width:95%;
+        margin-bottom:5%;
+    }
+ 
+    #price-range-container span input{
+        width:90%;
+        padding-left:10%;
+        background-color: #3d5a80;
+        height:5vh;
+        border-radius: 18px;
+        border:none;
+        color:#fff;
+        font-size:20px;
+    }
+    #price-range-container span input::placeholder{
+        color:#fff;
+        font-size:20px;
+
+    }
+    #create-list-btn{
+        position: relative;
+        margin-top:36px;
+        width:92%;
+        padding:8%;
+        background-color: #ee6c4d;
+        color:#fff;
+        border-radius:18px;
+        border:none;
+        font-size:20px;
+        text-align: left;
+    }
+    #create-list-btn i{
+        display:none;
+    }
+}
+@media only screen and (min-width: 0px) and (max-width: 700px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        height:80%;
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 5vmin;  
+        column-gap: 5vmin;
+        
+    }
+    .grid-item{
+        width:30vmin;
+        height:45vmin;
+    
+    }
+    #right-resources-items-container{
+        border-left:none;
+        padding-left:5%;
+    }
+    .market-grid-item{
+        width:100%;
+        height:70%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #3b5061);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 2;
+        overflow: hidden;
+        line-height: 3vmin;
+        margin-bottom: 1vmin;
+        font-size:2.6vmin;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:2.4vmin;
+        letter-spacing:2px;
+        margin:0;
+        width:7vmin;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        line-height: 2.5vmin;
+        margin:0;
+        font-size:2.2vmin;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        overflow:hidden;
+    }
+    #filter-settings-btn{
+        font-size: 4vmin;
+        margin:5%;
+    }
+    #filter-settings-btn:hover{
+        cursor: pointer;
+    }
+    #lrf-back-btn{
+        display:block;
+        color:#fff;
+        position:absolute;
+        font-size:4vmin;
+        top: 1vmin;
+        right:0;
+    }
+    #lrf-back-btn:hover{
+        cursor:pointer;
+    }
+    #right-resources-items-container{
+        width:100%;
+    }
+    #left-resources-filter-container{
+        position:absolute;
+        display:none;
+        width:90%;
+        height:75%;
+        top:9%;
+        left:5%;
+        z-index: 1000;
+        background-color: #293241;
+        border-top:none;
+        filter: drop-shadow(0 0 30px #000);
+    }
+    #lrf-container{
+        position:relative;
+    }
+    #resource-filter-heading{
+        font-size:7vmin;
+        line-height: 7vmin;
+    }
+    #search-bar{
+        display:flex;
+        border-radius: 18px;
+        background-color: #3D5A80;
+        width: 95%;;
+        height: 5vh;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    #search-bar input{
+        background: none;
+        border:none;
+        padding:30px;
+        width:80%;
+        color:#fff;
+        font-size:3vmin;
+    }
+    #search-bar input::placeholder{
+        color:#d3d3d3;
+        font-size:3vmin;
+        
+    }
+    #search-bar i{
+        display:block;
+        margin-left:20px;
+    }
+    .filter-container{
+        display:flex;
+        color: #fff;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .filter-container i{
+        font-size:3vmin;
+        width:2vmin;
+        text-align: center;
+
+    }
+    .rfdropmenu{
+        height: 5vh;
+        width: 90%;
+        padding-left:5%;
+        background-color: #3d5a80;
+        border:none;
+        border-radius:18px;
+        color:#fff;
+        font-size:3vmin;
+    }
+    #price-range-parent-container h2{
+        font-size:6vmin;
+        line-height: 6vmin;
+    }
+    #price-range-parent-container{
+        width:95%;
+        margin-bottom:5%;
+    }
+ 
+    #price-range-container span input{
+        width:90%;
+        padding-left:10%;
+        background-color: #3d5a80;
+        height:5vh;
+        border-radius: 18px;
+        border:none;
+        color:#fff;
+        font-size:3vmin;
+    }
+    #price-range-container span input::placeholder{
+        color:#fff;
+        font-size:3vmin;
+
+    }
+    #create-list-btn{
+        position: relative;
+        margin-top:3vmin;
+        width:95%;
+        padding: 30px;
+        
+        background-color: #ee6c4d;
+        color:#fff;
+        border-radius:18px;
+        border:none;
+        font-size:3vmin;
+        text-align: left;
+    }
+}
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    .grid-container{
+        display:grid;
+        grid-template-columns: auto auto ;
+        height:80%;
+        padding:5%;
+        overflow-y:auto;
+        scrollbar-width: none; 
+        row-gap: 50px;  
+        column-gap: 50px;
+        
+    }
+    .grid-item{
+        width:300px;
+        height:370px;
+    
+    }
+    #right-resources-items-container{
+        border-left:none;
+        padding-left:5%;
+    }
+    .market-grid-item{
+        width:100%;
+        height:80%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0 0 3px #3b5061);
+        border-radius: 18px;
+    }
+    .grid-item h3{
+        -webkit-line-clamp: 1;
+        overflow: hidden;
+        line-height: 25px;
+        margin-bottom: 15px;
+        font-size:21px;
+    }
+    .lower-grid-txt{
+        display:flex;
+        justify-content: space-between;
+    }
+    .lower-grid-txt h3{
+        font-weight: bold;
+        font-size:19px;
+        letter-spacing:4px;
+        margin:0;
+    }
+    .lower-grid-txt p{
+        color:#C8C8C8;
+        letter-spacing:3px;
+        margin:0;
+        font-size:16px;
+    }
+    #filter-settings-btn{
+        font-size: 40px;
+        margin:5%;
+    }
+    #filter-settings-btn:hover{
+        cursor: pointer;
+    }
+    #lrf-back-btn{
+        display:block;
+        color:#fff;
+        position:absolute;
+        font-size:25px;
+        top: 15px;
+        right:0;
+    }
+    #lrf-back-btn:hover{
+        cursor:pointer;
+    }
+    #right-resources-items-container{
+        width:100%;
+    }
+    #left-resources-filter-container{
+        position:absolute;
+        display:none;
+        width:90%;
+        height:75%;
+        top:9%;
+        left:5%;
+        z-index: 1000;
+        background-color: #293241;
+        border-top:none;
+        filter: drop-shadow(0 0 30px #000);
+    }
+    #lrf-container{
+        position:relative;
+    }
+    #resource-filter-heading{
+        font-size:60px;
+        line-height: 50px;
+    }
+    #search-bar{
+        display:flex;
+        border-radius: 18px;
+        background-color: #3D5A80;
+        width: 95%;;
+        height: 5vh;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    #search-bar input{
+        background: none;
+        border:none;
+        padding:30px;
+        width:80%;
+        color:#fff;
+        font-size:25px;
+    }
+    #search-bar input::placeholder{
+        color:#d3d3d3;
+        font-size:25px;
+        
+    }
+    #search-bar i{
+        display:block;
+        margin-left:20px;
+    }
+    .filter-container{
+        display:flex;
+        color: #fff;
+        width: 95%;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 5%;
+    }
+    .filter-container i{
+        font-size:34px;
+        width:28px;
+        text-align: center;
+
+    }
+    .rfdropmenu{
+        height: 5vh;
+        width: 90%;
+        padding-left:5%;
+        background-color: #3d5a80;
+        border:none;
+        border-radius:18px;
+        color:#fff;
+        font-size:25px;
+    }
+    #price-range-parent-container h2{
+        font-size:35px;
+        line-height: 35px;
+    }
+    #price-range-parent-container{
+        width:95%;
+        margin-bottom:5%;
+    }
+ 
+    #price-range-container span input{
+        width:90%;
+        padding-left:10%;
+        background-color: #3d5a80;
+        height:5vh;
+        border-radius: 18px;
+        border:none;
+        color:#fff;
+        font-size:25px;
+    }
+    #price-range-container span input::placeholder{
+        color:#fff;
+        font-size:25px;
+
+    }
+    #create-list-btn{
+        position: relative;
+        margin-top:3vmin;
+        width:95%;
+        padding: 30px;
+        
+        background-color: #ee6c4d;
+        color:#fff;
+        border-radius:18px;
+        border:none;
+        font-size:25px;
+        text-align: left;
+    }
+}

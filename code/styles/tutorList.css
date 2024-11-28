@@ -175,10 +175,7 @@ button:hover{
     overflow:hidden;
     color:#293241;
 }
-.fa-ellipsis{
-    color:#ee6c4d;
-    position: absolute;
-}
+
 
 #tdc-icons{
     display:flex;
@@ -215,75 +212,84 @@ button:hover{
 }
 @media only screen and (min-width:2400px){
     .filter-dropmenu button{
-        font-size: 20px;   
+        font-size: 1.4vmin;   
     }
     .dropmenu{
         color: #e0fbfc ;
         background: none;
         border: none;
-        font-size: 24px;
-        height:30px;
+        font-size: 1.4vmin;
+        height:2vmin;
     }
     #tutor-search{
-        width:280px;
-        height:30px;
+        width:16vmin;
+        height:2vmin;
         font-size:1.3vmin;
     }
    
     .tutor-list{
-        width:550px;
-        height:450px;
+        width:95%;
+        height:28vh;
         margin:5%;
     }
     #top-tdc header{
         font-weight:700;
-        font-size:50px;
+        font-size:3vmin;
         letter-spacing: 1px;
     }
     #top-tdc header2{
-        font-size:45px;
+        font-size:2.7vmin;
         font-weight:700;
     }
     .t-icon-desc{
-        margin-top: 30px;
-        font-size: 25px;
+        margin-top: 1.4vmin;
+        font-size: 1.8vmin;
     }
     .t-icon-desc .fa-star{
-        font-size: 18px;
+        font-size: 1.2vmin;
     }
     .t-icon-desc div{
-        width:50px;
-        margin-right:25px;
+        width:3vmin;
+        margin-right:3vmin;
     }
     #tutor-key-book{
-        padding: 20px;
-        width:230px;
-        font-size:24px;
+        padding: 1.6vmin;
+        width:13vmin;
+        font-size:1.5vmin;
         letter-spacing: 2px;
     }
     #bookmark-tdesc{
-        font-size:35px;
+        font-size:2vmin;
     }
     #desc-book-ellip{
-        margin-top:30px;
-        width:300px;
+        margin-top:2vmin;
+        width:18vmin;
     }
     #tdc-icons{
-        gap:30px;
-        font-size:34px;
+        gap:2vmin;
+        font-size:2vmin;
+    }
+    #gmail-icon{
+        font-size:1.5vmin;
     }
     .tutor-rating-atr{
-        padding:20px;
-        max-width:200px;
-        font-size:18px;
+        padding: 1vmin;
+        max-width: 15vmin;
+        font-size:1.4vmin;
         margin-top: 3%;
     }
+    #bot-tdc{
+        display:flex;
+        max-width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     .list-portrait{
-        width:140px;
-        height:140px;
-        border-bottom: 3px solid #ee6c4d;
+        width:9vmin;
+        height:9vmin;
+        border-bottom: 0.5vmin solid #ee6c4d;
         border-radius: 18px;
-        margin-bottom: 20px;
+        margin-bottom: 2vmin;
         display:block;
     }
     .list-left-container h2{
@@ -293,11 +299,7 @@ button:hover{
         line-height: 3.3vmin;
         padding-top:1vmin;
     }
-    .fa-ellipsis{
-        font-size: 24px;
-        bottom:50px;
-        right:70px;
-    }
+
     .list-left-container h3{
         font-weight: normal;
         margin-top:0.5vmin;
@@ -317,11 +319,17 @@ button:hover{
         width: 90%;
         max-width:90%;
         margin:5%;
-        line-height: 45px;
-        font-size:24px;
+        line-height: 3vmin;
+        font-size:1.8vmin;
+    }
+    .fa-bars{
+        font-size:0px;
     }
 }
 @media only screen and (min-width:1800px) and (max-width:2400px){
+    .fa-bars{
+        font-size:0px;
+    }
     .filter-dropmenu button{
         font-size: 20px;   
     }
@@ -363,6 +371,9 @@ button:hover{
         width:50px;
         margin-right:25px;
     }
+    #gmail-icon{
+        font-size:25px;
+    }
     #tutor-key-book{
         padding: 20px;
         width:230px;
@@ -384,11 +395,7 @@ button:hover{
         line-height: 30px;
         padding-top:20px;
     }
-    .fa-ellipsis{
-        font-size: 24px;
-        bottom:50px;
-        right:50px;
-    }
+
     .list-left-container h3{
         font-weight: normal;
         margin-top:0.5vmin;
@@ -438,14 +445,16 @@ button:hover{
         display:flex;
         flex-direction: column;
         justify-content: start;
-        gap:50px;
+        gap:1%;
         width:20%;
-        height:80%;
+        height:90%;
         float:left;
         background-color: #1c232f;
         border-radius: 18px;
-        padding:5%;
+        padding-left: 5%;
+        padding-right:5%;
     }
+    
     #tsc-container{
         display:block;
         width:60%;
@@ -464,6 +473,7 @@ button:hover{
         letter-spacing: 1px;
         width:130%;
         height:7%;
+        margin-top:10%;
     }
     .dropmenu{
         color: #e0fbfc ;
@@ -476,6 +486,7 @@ button:hover{
         border:none;
         width:120%;
         height:40px;
+        margin-top:15%;
     }
     #tutor-search{
         width:100%;
@@ -526,6 +537,9 @@ button:hover{
         width:50px;
         margin-right:25px;
     }
+    #gmail-icon{
+        font-size:25px;
+    }
     #tutor-key-book{
         padding: 20px;
         width:230px;
@@ -547,11 +561,7 @@ button:hover{
         line-height: 30px;
         padding-top:20px;
     }
-    .fa-ellipsis{
-        font-size: 0;
-        bottom:50px;
-        right:50px;
-    }
+
     .list-left-container h3{
         font-weight: normal;
         margin-top:0.5vmin;
@@ -579,11 +589,378 @@ button:hover{
         gap:30px;
         font-size:34px;
     }
+    #bot-tdc{
+        display:flex;
+        max-width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     .tutor-rating-atr{
         padding:1vmin;
-        max-width:13vmin;
-        font-size:1.2vmin;
+        max-width:300px;
+        font-size:18px;
         margin-top: 3%;
+    }
+    #desc-tdc{
+        width: 90%;
+        max-width:90%;
+        margin:5%;
+        line-height: 45px;
+        font-size:24px;
+    }
+}
+@media only screen and (min-width:0px) and (max-width:700px){
+    .filter-dropmenu button{
+        display:none;   
+    }
+    
+    #filter-dropmenu-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        gap:4%;
+        width:20%;
+        height:90%;
+        background-color: #1c232f;
+        border-radius: 18px;
+        padding-left: 5%;
+        padding-right:1%;
+        margin: 5% 0 0 0;
+        
+    }
+    #filter-tutor-container{
+        display:flex;
+        background-color: #1c232f;
+        height:80vh;
+        margin-bottom: 5vh;
+        border-radius: 12px;
+    }
+    #tsc-container{
+        display:block;
+        width:80%;
+        height:98%;
+        background-color: #1c232f;
+        border-radius: 18px;
+    }
+    #search-list-btn{
+        display:block;
+        background-color:#ee6c4d;
+        border:none;
+        color:#fff;
+        border-radius: 18px;
+        font-size:3vmin;
+        letter-spacing: 1px;
+        width:130%;
+        height:7%;
+        margin-top:15%;
+    }
+    .dropmenu{
+        color: #e0fbfc ;
+        background: none;
+        font-size: 2.2vmin;
+        height:40px;
+        width:100%;
+    }
+    .filter-dropmenu{
+        border:none;
+        width:120%;
+        height:40px;
+        margin-top:15%;
+    }
+    #tutor-search{
+        width:100%;
+        height:40px;
+        font-size:2.2vmin;
+    }
+    #top-tdc{
+        width:88%;
+        justify-content: space-between;
+    }
+    #tutor-display-container{
+        width:95%;
+        height:95%;
+        position:relative;
+        display:none;
+        scrollbar-width: none;
+    }
+    .fa-bars{
+        color:#000;
+        font-size:6vmin;
+        display:block;
+        margin-left:5%;
+        margin-top:5%;
+    }
+    .fa-bars:hover{
+        cursor: pointer;
+    }
+    .tutor-list{
+        width:85%;
+        height:25vh;
+        margin:5%;
+    }
+    #top-tdc header{
+        font-weight:700;
+        font-size:7vmin;
+        line-height: 7.5vmin;
+        letter-spacing: 1px;
+    }
+    #top-tdc header2{
+        font-size:6.5vmin;
+        font-weight:700;
+    }
+    #gmail-icon{
+        font-size:3.1vmin;
+    }
+    .t-icon-desc{
+        margin-top: 1.3vmin;
+        font-size: 4vmin;
+    }
+    .t-icon-desc .fa-star{
+        font-size: 2.3vmin;
+    }
+    .t-icon-desc div{
+        width:2vmin;
+        margin-right:25px;
+    }
+    #tutor-key-book{
+        padding: 5vmin;
+        width:30vmin;
+        font-size:3vmin;
+        letter-spacing: 2px;
+    }
+    .list-portrait{
+        width:10vmin;
+        height:10vmin;
+        border-bottom: 3px solid #ee6c4d;
+        border-radius: 18px;
+        margin-bottom: 2vmin;
+        display:block;
+    }
+    .list-left-container h2{
+        font-size: 4vmin;
+        margin-bottom:0;
+        margin-top:0;
+        line-height: 4vmin;
+        padding-top:2vmin;
+    }
+
+    .list-left-container h3{
+        font-weight: normal;
+        line-height: 3.5vmin;
+        margin-top:0.5vmin;
+        font-size:3.3vmin;
+    }
+    .list-left-container h4{
+        font-size: 3.5vmin;
+        margin-bottom: 0;
+
+    }
+    .list-left-container p{
+        font-size: 2.9vmin;
+        letter-spacing: 0.1vmin;
+        line-height: 3vmin;
+        -webkit-line-clamp: 3;
+    }
+    #bookmark-tdesc{
+        font-size:4.7vmin;
+    }
+    #desc-book-ellip{
+        margin-top:30px;
+        width:40vmin;
+    }
+    #tdc-icons{
+        gap:2vmin;
+        font-size:4vmin;
+    }
+    .tutor-rating-atr{
+        padding:1vmin;
+        max-width:40vmin;
+        font-size:3vmin;
+    }
+    #bot-tdc{
+        display:flex;
+        max-width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #desc-tdc{
+        width: 90%;
+        max-width:90%;
+        margin:5%;
+        line-height: 6vmin;
+        font-size:3vmin;
+    }
+}
+@media only screen and (min-width:700px) and (max-width:1000px){
+    .filter-dropmenu button{
+        display:none;   
+    }
+    
+    #filter-dropmenu-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: start;
+        gap:4%;
+        width:20%;
+        height:90%;
+        background-color: #1c232f;
+        border-radius: 18px;
+        padding-left: 5%;
+        padding-right:1%;
+        margin: 5% 0 0 0;
+    }
+    #filter-tutor-container{
+        display:flex;
+        background-color: #1c232f;
+        height:80vh;
+        margin-bottom: 5vh;
+        border-radius: 12px;
+    }
+    #tsc-container{
+        display:block;
+        width:80%;
+        height:98%;
+        background-color: #1c232f;
+        border-radius: 18px;
+    }
+    #search-list-btn{
+        display:block;
+        background-color:#ee6c4d;
+        border:none;
+        color:#fff;
+        border-radius: 18px;
+        font-size:20px;
+        letter-spacing: 1px;
+        width:130%;
+        height:7%;
+        margin-top:15%;
+    }
+    .dropmenu{
+        color: #e0fbfc ;
+        background: none;
+        font-size: 16px;
+        height:40px;
+        width:100%;
+    }
+    .filter-dropmenu{
+        border:none;
+        width:120%;
+        height:40px;
+        margin-top:15%;
+    }
+    #tutor-search{
+        width:100%;
+        height:40px;
+        font-size:14px;
+    }
+    #top-tdc{
+        width:88%;
+        justify-content: space-between;
+    }
+    #tutor-display-container{
+        width:95%;
+        height:95%;
+        position:relative;
+        display:none;
+    }
+    .fa-bars{
+        color:#000;
+        font-size:34px;
+        display:block;
+        margin-left:5%;
+        margin-top:5%;
+    }
+    .fa-bars:hover{
+        cursor: pointer;
+    }
+    .tutor-list{
+        width:85%;
+        height:350px;
+        margin:5%;
+    }
+    #top-tdc header{
+        font-weight:700;
+        font-size:50px;
+        letter-spacing: 1px;
+    }
+    #top-tdc header2{
+        font-size:45px;
+        font-weight:700;
+    }
+    #gmail-icon{
+        font-size:25px;
+    }
+    .t-icon-desc{
+        margin-top: 30px;
+        font-size: 25px;
+    }
+    .t-icon-desc .fa-star{
+        font-size: 18px;
+    }
+    .t-icon-desc div{
+        width:50px;
+        margin-right:25px;
+    }
+    #tutor-key-book{
+        padding: 20px;
+        width:230px;
+        font-size:24px;
+        letter-spacing: 2px;
+    }
+    .list-portrait{
+        width:80px;
+        height:80px;
+        border-bottom: 3px solid #ee6c4d;
+        border-radius: 18px;
+        margin-bottom: 20px;
+        display:block;
+    }
+    .list-left-container h2{
+        font-size: 27px;
+        margin-bottom:0;
+        margin-top:0;
+        line-height: 30px;
+        padding-top:20px;
+    }
+
+    .list-left-container h3{
+        font-weight: normal;
+        line-height: 20px;
+        margin-top:0.5vmin;
+        font-size:20px;
+    }
+    .list-left-container h4{
+        font-size: 23px;
+        margin-bottom: 0;
+
+    }
+    .list-left-container p{
+        font-size: 18px;
+        letter-spacing: 0.1vmin;
+        line-height: 24px;
+        -webkit-line-clamp: 3;
+    }
+    #bookmark-tdesc{
+        font-size:35px;
+    }
+    #desc-book-ellip{
+        margin-top:30px;
+        width:300px;
+    }
+    #tdc-icons{
+        gap:30px;
+        font-size:34px;
+    }
+    .tutor-rating-atr{
+        padding:1vmin;
+        max-width:300px;
+        font-size:20px;
+    }
+    #bot-tdc{
+        display:flex;
+        max-width: 90%;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
     #desc-tdc{
         width: 90%;

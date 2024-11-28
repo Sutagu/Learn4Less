@@ -188,10 +188,21 @@ document.addEventListener('DOMContentLoaded',function(){
 
                 ListBackBtn.addEventListener('click', function(){
                     tutorList.style.display='block';
-                    tutorFilter.style.display='block';
+                    tutorFilter.style.display='flex';
                     tutorDisplay.style.display='none';
                 });
             });
+        });
+
+        window.addEventListener('resize', function(){
+            if(this.window.innerWidth>1800){
+                tutorList.style.display='block';
+                tutorFilter.style.display='flex';
+                tutorDisplay.style.display='block';
+            }
+            if(this.window.innerWidth<=1800 && tutorList.style.display=='block'){
+                tutorDisplay.style.display='none';
+            }
         });
     }
     console.log("Do we achieve the end?");
