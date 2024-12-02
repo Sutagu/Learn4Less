@@ -769,6 +769,83 @@ textarea:focus, input:focus, select:focus{
     letter-spacing: 2px;
 }
 
+@media only screen and (min-width:0px) and (max-width:700px){
+    #homepage-introduction{
+        font-size: 4vmin;
+        line-height: 8vmin;
+        top:40%
+    }
+    #index-attributes-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+
+    }
+    .single-attribute{
+        display: flex;
+
+        width: 100%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .single-attribute i{
+        font-size:7vmin;
+        margin:0;
+        height:0%;
+        }
+    .single-attribute h1{
+        font-size:large;
+        line-height:3vh;
+    }
+    .single-attribute p{
+        display:none;
+    }
+    #index-image-track-background div header{
+        font-size:5vmin;
+        margin-top:5%;
+    }
+    .outer-track-container{
+        height:30vh;
+        width:90vw;
+    }
+    .portrait{
+        width:25vmin;
+        height:20vmin;
+    }
+    #index-image-track-background{
+        width:95%;
+    }
+    .inner-track-data-container div ul{
+        display:none;
+    }
+    .inner-track-data-container h2{
+        font-size:4.5vmin;
+        line-height: 5vmin;
+        margin:2% 5% 0 5%;
+        text-align: center;
+
+    }
+    .inner-track-data-container h3{
+        font-size:3vmin;
+        line-height: 4vmin;
+        max-width: 90%;
+    }
+
+
+    .inner-track-data-container{
+        width:40vw;
+        height:100%;
+    }
+    #view-more-tutor{
+        font-size:3vmin;
+        padding:2vmin;
+    }
+    .image-track-arrows{
+        font-size:3vmin;
+        margin:2%;
+    }
+}
+
 @media screen and ( max-width :1024px) and (orientation: landscape){
     #landscape-restriction{
         display:flex;
