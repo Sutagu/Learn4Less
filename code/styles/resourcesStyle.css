@@ -183,16 +183,17 @@
         -webkit-line-clamp: 1;
         overflow: hidden;
         margin-bottom: 10px;
-        font-size:25px;
+        font-size:20px;
         line-height: 25px;
     }
     .lower-grid-txt{
         display:flex;
         justify-content: space-between;
+        align-items: center;
     }
     .lower-grid-txt h3{
         font-weight: bold;
-        font-size:24px;
+        font-size:20px;
         letter-spacing:4px;
         margin:0;
     }
@@ -200,7 +201,7 @@
         color:#C8C8C8;
         letter-spacing:3px;
         margin:0;
-        font-size:18px;
+        font-size:14px;
     }
     
     #filter-settings-btn{
@@ -210,7 +211,8 @@
         display:none;
     }
     #resource-filter-heading{
-        font-size:65px;
+        font-size:35px;
+        letter-spacing: 1px;
         line-height: 55px;
     }
     #search-bar{
@@ -228,11 +230,11 @@
         padding:20px;
         width:80%;
         color:#fff;
-        font-size:24px;
+        font-size:18px;
     }
     #search-bar input::placeholder{
         color:#d3d3d3;
-        font-size:24px;
+        font-size:18px;
         
     }
     #search-bar i{
@@ -248,7 +250,7 @@
         margin-bottom: 5%;
     }
     .filter-container i{
-        font-size:34px;
+        font-size:28px;
         width:28px;
         text-align: center;
     }
@@ -260,10 +262,11 @@
         border:none;
         border-radius:18px;
         color:#fff;
-        font-size:24px;
+        font-size:18px;
     }
     #price-range-parent-container h2{
-        font-size:38px;
+        font-size:24px;
+        letter-spacing: 1px;
     }
     #price-range-parent-container{
         width:95%;
@@ -283,11 +286,11 @@
         border-radius: 18px;
         border:none;
         color:#fff;
-        font-size:24px;
+        font-size:18px;
     }
     #price-range-container span input::placeholder{
         color:#fff;
-        font-size:24px;
+        font-size:18px;
 
     }
     #create-list-btn{
@@ -299,7 +302,7 @@
         color:#fff;
         border-radius:18px;
         border:none;
-        font-size:24px;
+        font-size:20px;
         text-align: left;
     }
 }

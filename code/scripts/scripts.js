@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded',function(){
                 const typewriterTxtContent = document.getElementById("typewriter-select");
                 typewriterTxtContent.classList.remove("typewriter-animate");
                 const state = button.getAttribute('name');
-                const AuStates = ['Queensland', 'Western Australia', 'South Australia', 'Victoria', 'New South Wales'];
+                const AuStates = ['Northern Territory', 'Tasmania','Australian Capital Territory', 'Queensland', 'Western Australia', 'South Australia', 'Victoria', 'New South Wales'];
                 if(AuStates.includes(state)){
                     button.addEventListener('click', () =>{
                         ss.style.display = 'none';
