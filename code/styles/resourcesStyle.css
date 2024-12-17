@@ -1,15 +1,15 @@
-h2, h3{
+h3{
     color: #1c232f;
 }
 .lower-grid-txt p{
     color: #293241 !important;
 }
+
 @media only screen and (min-width: 3000px) {
     .grid-container{
         display:grid;
         grid-template-columns: auto auto auto auto auto;
-        height:80%;
-
+        height:70%;
         padding:5%;
         overflow-y:auto;
         scrollbar-width: none; 
@@ -35,8 +35,9 @@ h2, h3{
     .grid-item h3{
         -webkit-line-clamp: 1;
         overflow: hidden;
-        margin-bottom: 1vmin;
+        margin-bottom: 0.4vmin;
         font-size:1.3vmin;
+        font-weight: normal;
     }
     .lower-grid-txt{
         display:flex;
@@ -146,7 +147,7 @@ h2, h3{
     }
     #create-list-btn{
         position: relative;
-        margin-top:70px;
+        margin-top:20px;
         width:92%;
         padding:2vmin;
         background-color: #ee6c4d;
@@ -156,12 +157,25 @@ h2, h3{
         font-size:1.8vmin;
         text-align: left;
     }
+    #search-list-btn{
+        margin-top:20px;
+        width:92%;
+        padding:2vmin;
+        background-color: #e0fbfc;
+        color:#292929;
+        border-radius:18px;
+        border:none;
+        font-size:1.8vmin;
+        display:flex;
+        justify-content: space-between;
+    }
+    
 }
 @media only screen and (min-width: 1400px) and (max-width:3000px) {
     .grid-container{
         display:grid;
         grid-template-columns: auto auto auto auto auto;
-        height:80%;
+        height:70%;
 
         padding:5%;
         overflow-y:auto;
@@ -190,7 +204,8 @@ h2, h3{
         overflow: hidden;
         margin-bottom: 10px;
         font-size:14px;
-        line-height: 25px;
+        line-height: 15px;
+        font-weight: normal;
     }
     .lower-grid-txt{
         display:flex;
@@ -311,6 +326,18 @@ h2, h3{
         font-size:20px;
         text-align: left;
     }
+    #search-list-btn{
+        width:92%;
+        padding:2vmin;
+        background-color: #e0fbfc;
+        color:#292929;
+        border-radius:18px;
+        border:none;
+        font-size:20px;
+        margin-bottom: 30px;
+        display:flex;
+        justify-content: space-between;
+    }
 }
 @media only screen and (min-width:1771px) and (max-width: 2400px){
     .grid-container{
@@ -380,15 +407,17 @@ h2, h3{
         overflow: hidden;
         margin-bottom: 10px;
         font-size:13px;
-        line-height: 20px;
+        font-weight: normal;
+        line-height: 14px;
     }
     .lower-grid-txt{
         display:flex;
         justify-content: space-between;
+        align-items: center;
     }
     .lower-grid-txt h3{
         font-weight: bold;
-        font-size:12px;
+        font-size:15px;
         letter-spacing:1px;
         margin:0;
     }
@@ -479,7 +508,6 @@ h2, h3{
 
     }
     #create-list-btn{
-        position: relative;
         margin-top:36px;
         width:92%;
         padding:8%;
@@ -487,28 +515,40 @@ h2, h3{
         color:#fff;
         border-radius:18px;
         border:none;
-        font-size:20px;
-        text-align: left;
+        font-size:18px;
+        display:flex;
+        justify-content: space-between;
     }
-    #create-list-btn i{
-        display:none;
+
+    #search-list-btn{
+        margin-top:36px;
+        width:92%;
+        padding:8%;
+        background-color: #e0fbfc;
+        color:#292929;
+        border-radius:18px;
+        border:none;
+        font-size:18px;
+        display:flex;
+        justify-content: space-between;
     }
 }
 @media only screen and (min-width: 0px) and (max-width: 700px) {
     .grid-container{
         display:grid;
         grid-template-columns: auto auto auto;
+        width:85%;
         height:80%;
         padding:5%;
         overflow-y:auto;
         scrollbar-width: none; 
         row-gap: 5vmin;  
         column-gap: 5vmin;
-        
+        border-top: 1px solid #293241;
     }
     .grid-item{
-        width:30vmin;
-        height:45vmin;
+        width:20vmin;
+        height:35vmin;
     
     }
     #right-resources-items-container{
@@ -527,26 +567,29 @@ h2, h3{
     .grid-item h3{
         -webkit-line-clamp: 2;
         overflow: hidden;
-        line-height: 3vmin;
-        margin-bottom: 1vmin;
-        font-size:2.6vmin;
+        line-height: 2vmin;
+        margin-bottom: 2vmin;
+        font-size:1.8vmin;
+        font-weight: normal;
     }
     .lower-grid-txt{
         display:flex;
         justify-content: space-between;
+        align-items: center;
     }
     .lower-grid-txt h3{
         font-weight: bold;
-        font-size:2.4vmin;
-        letter-spacing:2px;
+        font-size:2.5vmin;
+        line-height: 3vmin;
+        letter-spacing:1px;
         margin:0;
-        width:7vmin;
+        width:6vmin;
     }
     .lower-grid-txt p{
         color:#C8C8C8;
         line-height: 2.5vmin;
         margin:0;
-        font-size:2.2vmin;
+        font-size:1.5vmin;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 1;
@@ -555,6 +598,7 @@ h2, h3{
     #filter-settings-btn{
         font-size: 4vmin;
         margin:5%;
+        color:#293241;
     }
     #filter-settings-btn:hover{
         cursor: pointer;
@@ -576,28 +620,34 @@ h2, h3{
     #left-resources-filter-container{
         position:absolute;
         display:none;
-        width:90%;
-        height:75%;
-        top:9%;
-        left:5%;
+        width:70%;
+        height:65%;
+        top:15%;
+        left:15%;
         z-index: 1000;
         background-color: #293241;
         border-top:none;
         filter: drop-shadow(0 0 30px #000);
+        
     }
     #lrf-container{
         position:relative;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        
     }
     #resource-filter-heading{
-        font-size:7vmin;
-        line-height: 7vmin;
+        font-size:35px;
+        line-height: 40px;
+        color:#e0fbfc;
     }
     #search-bar{
         display:flex;
         border-radius: 18px;
         background-color: #3D5A80;
-        width: 95%;;
-        height: 5vh;
+        width: 85%;
+        height: 3vh;
         align-items: center;
         margin-bottom: 5%;
     }
@@ -607,11 +657,11 @@ h2, h3{
         padding:30px;
         width:80%;
         color:#fff;
-        font-size:3vmin;
+        font-size:14px;
     }
     #search-bar input::placeholder{
         color:#d3d3d3;
-        font-size:3vmin;
+        font-size:14px;
         
     }
     #search-bar i{
@@ -621,33 +671,34 @@ h2, h3{
     .filter-container{
         display:flex;
         color: #fff;
-        width: 95%;
+        width: 85%;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 5%;
     }
     .filter-container i{
-        font-size:3vmin;
-        width:2vmin;
+        font-size:20px;
+        width:28px;
         text-align: center;
 
     }
     .rfdropmenu{
-        height: 5vh;
+        height: 3vh;
         width: 90%;
         padding-left:5%;
         background-color: #3d5a80;
         border:none;
         border-radius:18px;
         color:#fff;
-        font-size:3vmin;
+        font-size:14px;
     }
     #price-range-parent-container h2{
-        font-size:6vmin;
-        line-height: 6vmin;
+        font-size:24px;
+        line-height: 35px;
+        color:#e0fbfc;
     }
     #price-range-parent-container{
-        width:95%;
+        width:85%;
         margin-bottom:5%;
     }
  
@@ -655,30 +706,44 @@ h2, h3{
         width:90%;
         padding-left:10%;
         background-color: #3d5a80;
-        height:5vh;
+        height:3vh;
         border-radius: 18px;
         border:none;
         color:#fff;
-        font-size:3vmin;
+        font-size:14px;
     }
     #price-range-container span input::placeholder{
         color:#fff;
-        font-size:3vmin;
+        font-size:14px;
 
     }
     #create-list-btn{
         position: relative;
         margin-top:3vmin;
-        width:95%;
-        padding: 30px;
+        width:85%;
+        padding: 10px;
         
         background-color: #ee6c4d;
         color:#fff;
         border-radius:18px;
         border:none;
-        font-size:3vmin;
-        text-align: left;
+        font-size:18px;
+        display:flex;
+        justify-content: space-between;
     }
+    #search-list-btn{
+        margin-top:2vmin;
+        width:85%;
+        padding:10px;
+        background-color: #e0fbfc;
+        color:#292929;
+        border-radius:18px;
+        border:none;
+        font-size:18px;
+        display:flex;
+        justify-content: space-between;
+    }
+    
 }
 @media only screen and (min-width: 700px) and (max-width: 1000px) {
     .grid-container{
@@ -715,8 +780,9 @@ h2, h3{
         -webkit-line-clamp: 1;
         overflow: hidden;
         line-height: 15px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
         font-size:12px;
+        font-weight: normal;
     }
     .lower-grid-txt{
         display:flex;
@@ -858,15 +924,28 @@ h2, h3{
     }
     #create-list-btn{
         position: relative;
-        margin-top:3vmin;
+        margin-top:2vmin;
         width:85%;
-        padding: 20px;
+        padding:10px;
         
         background-color: #ee6c4d;
         color:#fff;
         border-radius:18px;
         border:none;
-        font-size:20px;
-        text-align: left;
+        font-size:18px;
+        display:flex;
+        justify-content: space-between;
+    }
+    #search-list-btn{
+        margin-top:2vmin;
+        width:85%;
+        padding:10px;
+        background-color: #e0fbfc;
+        color:#292929;
+        border-radius:18px;
+        border:none;
+        font-size:18px;
+        display:flex;
+        justify-content: space-between;
     }
 }

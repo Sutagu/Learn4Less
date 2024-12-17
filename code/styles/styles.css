@@ -729,11 +729,6 @@ button:hover{
     justify-content: space-between;
     align-items: center;
 }
-
-#create-list-btn i{
-    position: absolute;
-    right:5%;
-}
 #price-range-container span{
     width: 40%;
 }
