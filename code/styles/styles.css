@@ -80,7 +80,7 @@ header{
     background-position: center;
 }
 #homepage-introduction{
-    width:35vw;
+    max-width:35vw;
     height:auto;
     font-size: clamp(2em, 2.5vw, 3em);
     position:absolute;
@@ -159,6 +159,9 @@ header{
     overflow-x: auto;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    cursor:grab;
+    position:relative;
+    user-select: none;
 }
 .image-track-arrows{
     font-size:0.7em;
@@ -174,8 +177,8 @@ header{
     transform: scaleX(-1);
 }
 .inner-track-data-container{
-    background: linear-gradient(#293241 20%, #3d5a80 22%, #98c1d9da 50%);
-    border-radius: 12px;
+    background: linear-gradient(#3d5a80 20%, #fff 20%);
+    border-radius: 3em;
     width: 30vmin;
     height:90%;
     flex-shrink: 0;
@@ -183,48 +186,76 @@ header{
     flex-direction: column;
     position:relative;
     align-items: center;
-    
 }
 .inner-track-data-container:hover{
     cursor: pointer;
-    animation: experimental-drop-shadow 2s ease forwards;
+    .portrait{
+        animation: experimental-drop-shadow 2s ease forwards;
+    }
+}
+.identifier-text{
+    max-height:45%;
+    width:100%;
+    justify-items: center;
+    text-align: center;
 }
 .inner-track-data-container h2{
-    max-width:60%;
-    font-size:1.8em;
-    line-height:1.9em;
-    margin-bottom:0;
+    color:#000;
+    max-width: 70%;
+    font-size:clamp(1.3em, 2vmin, 1.8em);
+    line-height:1.3em;
+    margin:0;
 }
 .inner-track-container h3{
-    max-width: 60%;
-    font-size:1.2em;
+    max-width: 80%;
+    font-size:clamp(0.8em, 2vmin, 1.5em);
     line-height:1.3em;
     color: #293241;
     text-align: center;
+    
+    font-weight: lighter;
 }
-.inner-track-container div ul li{
-    font-size:1.7vmin;
-    padding-right:3vmin;
-    color: #E0FBFC;
-    line-height: 2vmin;
+.identifier-location{
+    color:#202020;
+    position:absolute;
+    bottom:0;
+    width:100%;
+    max-height:30%;
+    background-color: #98C1D9;
+    border-bottom-left-radius: 3em;
+    border-bottom-right-radius: 3em;
+}
+.identifier-split{
+    line-height:0em;
+    display:flex;
+    align-items: center;
+    justify-self: center;
+    gap:1em;
+    font-size:clamp(0.8em, 1.5vmin, 1.7em);
+    letter-spacing: 1px;
+    color:#323952;
+    white-space: nowrap;     
+    overflow: hidden;            
+    text-overflow: ellipsis;    
+    max-width: 80%;
 }
 .portrait-identifier-container{
     width:100%;
-    height:45%;
+    height:40%;
     display:flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 .portrait{
-    width:55%;
-    height:80%;
+    width:35%;
+    height:auto;
     background-size: contain;
     background-position: center;
-    border-radius:15%;
+    border-radius:50%;
+    filter: drop-shadow(0 0 0.3em #000);
 }
 
 h2{
-    color: #fff;
     line-height: 3vmin;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -233,11 +264,11 @@ h2{
     font-size:2.5vmin;
 }
 h3{
-    color: #d9d9d9;
+    color: #fff;
     line-height: 1.8vmin;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 4;
     overflow: hidden;
     font-size:1.5vmin;
 }
@@ -247,12 +278,12 @@ h3{
     
 }
 #view-more-tutor{
-    font-size: 1.7vmin;
+    font-size: 1.1em;
     text-decoration: none;
     color: #fff;
     background-color: #ee6c4d  ;
-    padding:1vmin;
-    border-radius: 9px;
+    padding:0.6em;
+    border-radius: 12px;
     
 }
 #view-more-tutor:hover{
@@ -269,16 +300,18 @@ h3{
     align-content: center;
 }
 #hiw-text-container header{
-    font-size:4vmin;
+    font-size:2em;
     letter-spacing: -0.2vmin;
     color: #000;
 }
 #hiw-p{
     text-align: center;
-    font-size:2vmin;
+    font-size:1.4em;
+    letter-spacing: 0.1vmin;
     color: #293241 ;
-    line-height: 3.5vmin;
-    margin: 5vmin 25% 5vmin 25%;
+    line-height: 1.7em;
+    max-width:50%;
+    margin: 2em auto;
 }
 footer{
     border-top: 1px solid #3b5061;
@@ -298,22 +331,24 @@ footer{
 .f-links li a{
     text-decoration: none;
     color:#d3d3d3;
-    font-size: 1.5vmin;
+    font-size: 1.2em;
     
 }
 .f-links li a:hover{
     font-weight: bold;
 }
 #f-social-media h3{
+    font-weight: normal;
     max-width: 20vw;
     word-wrap: break-word;
+    color: #d3d3d3;
 }
 #f-social-media-container{
     display: flex;
     gap: 1vw;
 }
 .social-media-image{
-    max-width: 2vmin;
+    max-width: 3vmin;
 }
 .f-bottom{
     margin: 0 20vw 0 20vw;
@@ -754,12 +789,20 @@ textarea:focus, input:focus, select:focus{
     .single-attribute p{
         font-size:1.2em;
     }
+    .image-track-arrows{
+        display:none !important;
+    }
+    #f-social-media h3{
+        max-width:30vw;
+        font-size:1em;
+    }
 }
 @media only screen and (min-width:0px) and (max-width:700px){
     #homepage-introduction{
-        font-size: 4vmin;
-        line-height: 8vmin;
-        top:40%
+        font-size: 1.5em;
+        top:70%;
+        left:10vw;
+        max-width:80vw;
     }
     #index-attributes-container{
         flex-direction: column;
@@ -769,13 +812,12 @@ textarea:focus, input:focus, select:focus{
     }
     .single-attribute{
         display: flex;
-
         width: 100%;
         align-items: center;
         justify-content: space-evenly;
     }
     .single-attribute i{
-        font-size:7vmin;
+        font-size:1.8em;
         margin:0;
         height:0%;
         }
@@ -786,40 +828,28 @@ textarea:focus, input:focus, select:focus{
     .single-attribute p{
         display:none;
     }
-    #index-image-track-background div header{
-        font-size:5vmin;
-        margin-top:5%;
-    }
     .outer-track-container{
         height:55vh;
-        
     }
     .portrait-identifier-container{
         height:35%;
     }    
     .portrait{
-        width:22vmin;
-        height:22vmin;
+        width:5em;   
     }
     #index-image-track-background{
         width:95%;
         height: 70vh;
     }
-    .inner-track-data-container div ul li{
-        font-size:3.5vmin;
-        line-height: 5vmin;
-        margin-top:0;
-    }
     .inner-track-data-container h2{
-        font-size:4.5vmin;
-        line-height: 5vmin;
-        margin:2% 5% 0 5%;
-        text-align: center;
+        font-size:1.2em;
+        line-height: 1.3em;
 
     }
     .inner-track-data-container h3{
-        font-size:3vmin;
-        line-height: 4vmin;
+        font-size:1em;
+        line-height: 1.1em;
+        -webkit-line-clamp: 3;
         max-width: 90%;
     }
     .inner-track-data-container:hover{
@@ -827,29 +857,30 @@ textarea:focus, input:focus, select:focus{
     }
     .inner-track-data-container{
         width:50vw;
-        height:80%;
-        background: linear-gradient(#3d5a80 25%, #98c1d9da 25%);
+        background: linear-gradient(#3d5a80 20%, #fff 20%);
     }
+    .identifier-split{
+        max-width: 65%;
+    }
+    
     .inner-track-container{
         overflow-x: scroll;
         scrollbar-width: none;
     }
     #view-more-tutor{
-        font-size:3vmin;
-        padding:2vmin;
+        font-size:1em;
+        padding:0.7em;
     }
     .image-track-arrows{
         display:none !important;
     }
 
     #hiw-text-container header{
-        font-size:6vmin;
-        line-height: 6vmin;
+        font-size:2em;
     }
     #hiw-p{
-        font-size:4vmin;
-        margin: 5vmin 10% 5vmin 10%;
-        line-height: 6vmin;
+        font-size:1em;
+        line-height: 1.2em;
         letter-spacing: 1px;
     }
     .nav-container div ul li a{
@@ -863,15 +894,57 @@ textarea:focus, input:focus, select:focus{
         height:8.5vmin;
     }
     .f-links h2{
-        font-size:4vmin;
+        font-size:1.3em;
+        line-height: 1em;
     }
     .f-links li a{
-        font-size:3vmin;
-        line-height: 7vmin;
+        font-size:1em;
+        line-height: 1.4em;
     }
-    #f-social-media{
-        display:none;
+    .f-top {
+        justify-items: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "tutor about"
+            "social social";
+        gap:1em;
     }
+    
+    #f-tutor-links {
+        grid-area: tutor;
+    }
+    
+    #f-about-links {
+        grid-area: about;
+    }
+    
+    #f-social-media {
+        grid-area: social;
+        text-align: center;
+    }
+    
+    #f-social-media-container {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    #f-social-media h2{
+        font-size:1.3em;
+        line-height: 1em;
+    }
+    #f-social-media h3{
+        max-width:80vw;
+        font-size:1em;
+        line-height: 1.2em;
+        color:#d3d3d3;
+    }
+    .social-media-image{
+        max-width:6vmin;
+    }
+    
+    
     #ss-container{
         flex-direction: column;
         justify-content: center;

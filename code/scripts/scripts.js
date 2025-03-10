@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded',function(){
         });
     }
 
+
     if(window.location.pathname.endsWith("index.html")||window.location.pathname.endsWith('tutors.html')){
         const imageTrackContainer = document.querySelector('.inner-track-container');
         console.log('Initialised Track Scrolls');
@@ -46,6 +47,39 @@ document.addEventListener('DOMContentLoaded',function(){
             imageTrackContainer.scrollLeft += viewportWidth/1.8;
             console.log('Scroll is Clicked!');
         });
+
+
+        let isDragging = false;
+        let startX;
+        let scrollLeft;
+        imageTrackContainer.addEventListener('mousedown', (e) => {
+            isDragging = true;
+            startX = e.clientX; 
+            scrollLeft = imageTrackContainer.scrollLeft; 
+            imageTrackContainer.style.cursor = 'grabbing';
+        });
+        
+        imageTrackContainer.addEventListener('mousemove', (e) => {
+            if (!isDragging) return; 
+            const distance = e.clientX - startX;
+        
+            window.requestAnimationFrame(() => {
+                imageTrackContainer.scrollLeft = scrollLeft - distance;
+            });
+        });
+        
+        imageTrackContainer.addEventListener('mouseup', () => {
+            isDragging = false;
+            imageTrackContainer.style.cursor = 'grab';
+        });
+        
+        imageTrackContainer.addEventListener('mouseleave', () => {
+            if (isDragging) {
+                isDragging = false;
+                imageTrackContainer.style.cursor = 'grab';
+            }
+        });
+        
     }
 
     if(window.location.pathname.endsWith('tutors.html')){
