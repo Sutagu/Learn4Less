@@ -256,21 +256,21 @@ header{
 }
 
 h2{
-    line-height: 3vmin;
+    line-height: 1.8em;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     overflow: hidden;
-    font-size:2.5vmin;
+    font-size:2em;
 }
 h3{
     color: #fff;
-    line-height: 1.8vmin;
+    line-height: 1.4em;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
-    font-size:1.5vmin;
+    font-size:1.6em;
 }
 
 .view-more{
@@ -367,45 +367,41 @@ footer{
     background-color: #293241 ;
 }
 #ss-container{
-    justify-content: space-between;
+    justify-content: space-evenly;
     display:flex;
-    position: relative;
+    align-items: center;
     width:100%;
    
 }
 #au-ss-map{
-    width:60%;
+    width:50%;
 }
 
 #features path{
     fill:#98c1d9;   
     stroke:#ffffff; 
     stroke-width:.5;
-    width: 70vmin;
 }
 #features path:hover{
     fill: #ee6c4d;
     cursor: pointer;
 }
 #typewriter-state-container{
-    position: absolute;
-    right:15%;
-    top:45%;
-    text-align: right;
+    text-align: end;
+    width:20%;
 }
 #typewriter-state-container h5{
     color:#98c1d9; 
-    font-size: 2.3vmin;
+    font-size: 1.8em;
     margin:0 0 2vmin 0;
 }
 #typewriter-select{
     margin:0 auto;
     color:#e0fbfc;
-    font-size: 2.7vmin;
+    font-size: 2em;
     overflow: hidden;
     border-right: 1px solid #ee6c4d;
     white-space: nowrap;
-    
 }
 .typewriter-animate{
     animation:
@@ -415,7 +411,7 @@ footer{
 #typewriter-state-container p{
     margin:2vmin 0 0 0;
     color:#98c1d9; 
-    font-size:1.2vmin;
+    font-size:1.2em;
 
 }
 
@@ -796,6 +792,21 @@ textarea:focus, input:focus, select:focus{
         max-width:30vw;
         font-size:1em;
     }
+    #ss-container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #au-ss-map{
+        width:80%;
+    }
+    #typewriter-state-container{
+        position: initial;
+        height:30vh;
+        margin-top:5%;
+        width:40%;
+        margin: 0 auto;
+    }
 }
 @media only screen and (min-width:0px) and (max-width:700px){
     #homepage-introduction{
@@ -957,18 +968,20 @@ textarea:focus, input:focus, select:focus{
         position: initial;
         height:30vh;
         margin-top:5%;
+        width:70%;
+        margin: 10%;
     }
     #typewriter-state-container h5{
-        font-size:3vmin;
+        font-size:1.4em;
     }
     #typewriter-select{
-        font-size:5vmin;
+        font-size:1.5em;
     }
     #typewriter-state-container p{
-        font-size:2vmin;
+        font-size:1em;
     }
 
-    
+     
 }
 @media screen and (-Webkit-min-device-pixel-ratio: 1.5) and ( max-width :1024px) and (orientation: landscape){
     #landscape-restriction{
