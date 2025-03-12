@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded',function(){
     }
 
 
-    if(window.location.pathname.endsWith("index.html")||window.location.pathname.endsWith('tutors.html')){
+    if(window.location.pathname.endsWith("index.html")){
         const imageTrackContainer = document.querySelector('.inner-track-container');
         console.log('Initialised Track Scrolls');
         console.log('viewportWidth is : '+ viewportWidth);
@@ -81,13 +81,13 @@ document.addEventListener('DOMContentLoaded',function(){
         });
         
     }
+    const ftc = document.getElementById('ftc-tutors');
 
     if(window.location.pathname.endsWith('tutors.html')){
         const states = document.querySelectorAll('.states-select');
         console.log("within path of tutors.html");
         const ss = document.getElementById('ss-tutors');
-        const ttc = document.getElementById('ttc-tutors');
-        const trackText = document.getElementById('state-featured-tutor');
+        
 
         states.forEach(button =>{
             
@@ -99,9 +99,8 @@ document.addEventListener('DOMContentLoaded',function(){
                 if(AuStates.includes(state)){
                     button.addEventListener('click', () =>{
                         ss.style.display = 'none';
-                        ttc.style.display ='block';
+                        ftc.style.display ='block';
                         const state = button.getAttribute('name');
-                        trackText.textContent = `Featured Tutors in ${state}`;
                     });
                     setTimeout(() => {
                         typewriterTxtContent.textContent=state;
@@ -138,7 +137,6 @@ document.addEventListener('DOMContentLoaded',function(){
             }
         });
     
-        const ftc = document.getElementById('ftc-tutors');
         const tutorIso = document.getElementById('tutor-iso-display-container');
         const reportOverlay = document.getElementById('report-overlay');
         const reportBtn = document.getElementById('report-button');
@@ -181,30 +179,30 @@ document.addEventListener('DOMContentLoaded',function(){
 
     }
 
-    if(window.location.pathname.endsWith('resources.html')){
-        const filterBtn=document.getElementById('filter-settings-btn');
-        const backBtn = document.getElementById('lrf-back-btn');
-        const leftWindow = document.getElementById('left-resources-filter-container');
+    // if(window.location.pathname.endsWith('resources.html')){
+    //     const filterBtn=document.getElementById('filter-settings-btn');
+    //     const backBtn = document.getElementById('lrf-back-btn');
+    //     const leftWindow = document.getElementById('left-resources-filter-container');
 
-        filterBtn.addEventListener('click', function(){
-            leftWindow.style.display='block';
+    //     filterBtn.addEventListener('click', function(){
+    //         leftWindow.style.display='block';
 
-        });
-        backBtn.addEventListener('click', function(){
-            leftWindow.style.display='none';
+    //     });
+    //     backBtn.addEventListener('click', function(){
+    //         leftWindow.style.display='none';
 
-        });
-        window.addEventListener('resize', function(){
-            if(this.window.innerWidth>1000 && leftWindow.style.display=='none'){
-                leftWindow.style.display='block';
-            }
-        });
-        window.addEventListener('resize', function(){
-            if(this.window.innerWidth<=1000 && leftWindow.style.display=='block'){
-                leftWindow.style.display='none';
-            }
-        });
-    }
+    //     });
+    //     window.addEventListener('resize', function(){
+    //         if(this.window.innerWidth>1000 && leftWindow.style.display=='none'){
+    //             leftWindow.style.display='block';
+    //         }
+    //     });
+    //     window.addEventListener('resize', function(){
+    //         if(this.window.innerWidth<=1000 && leftWindow.style.display=='block'){
+    //             leftWindow.style.display='none';
+    //         }
+    //     });
+    // }
 
     if(window.location.pathname.endsWith('tutorList.html')){
         const ListBackBtn = document.getElementById('tutor-list-back');
