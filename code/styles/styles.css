@@ -45,11 +45,10 @@ header{
     justify-self:center;
     justify-content: space-between;
     align-items: center;
-    
 }
 .nav-container div ul{
     display:flex;
-    gap: 8em;
+    gap: 5vw;
     
 }
 .nav-container div ul li{
@@ -57,15 +56,15 @@ header{
     a{
         color:#fff;
         text-decoration: none;
-        font-size:2em;
+        font-size:1.3rem;
         text-align: center;
     }
 }
 .nav-logo{
-    width:5em;
+    width:2.8rem;
 }
 .nav-bookmarks{
-    width:2em;
+    width:1.3rem;
 }
 
 .content-banner{
@@ -77,7 +76,7 @@ header{
 #homepage-background-container{
     width:100%;
     height:100vh;
-    background: url("/Learn4Less/code/images/background-index.jpg") repeat fixed 100%;
+    background: url("/code/images/background-index.jpg") repeat fixed 100%;
     /* background: url("/code/images/background-index.jpg") repeat fixed 100%; */
     background-size:cover;
     background-position: center;
@@ -112,7 +111,7 @@ header{
 }
 .single-attribute i{
     color:#fff;
-    font-size:2.5em;
+    font-size:2rem;
     background-color: #ee6c4d ;
     padding:0.7em;
     border-radius: 50%;
@@ -125,14 +124,14 @@ header{
 }
 .single-attribute p,h1{
     text-align: center;    
-    font-size:2em;
+    font-size:1.4rem;
     max-width:20vw;
     color:#000;
     line-height:1.5em;
 }
 .single-attribute p{
     color:#323952;
-    font-size:1.7em;
+    font-size:1.2rem;
 }
 #index-image-track-background{
     max-width:95%;
@@ -204,8 +203,8 @@ header{
 }
 .inner-track-data-container h2{
     color:#000;
-    max-width: 70%;
-    font-size:clamp(1.3em, 2vmin, 1.8em);
+    max-width: 90%;
+    font-size:clamp(1.3rem, 2vmin, 1.8rem);
     line-height:1.3em;
     margin:0;
 }
@@ -304,13 +303,13 @@ h3{
     padding-bottom:10%;
 }
 #hiw-text-container header{
-    font-size:2em;
+    font-size:1.7rem;
     letter-spacing: -0.2vmin;
     color: #000;
 }
 #hiw-p{
     text-align: center;
-    font-size:1.4em;
+    font-size:1.1rem;
     letter-spacing: 0.1vmin;
     color: #293241 ;
     line-height: 1.7em;
@@ -327,7 +326,7 @@ footer{
     padding: 3vh 0 3vh 0;
 }
 .f-links{
-    line-height: 3vmin;
+    line-height: 1.8em;
 }
 .f-links li{
     list-style-type: none;
@@ -335,7 +334,7 @@ footer{
 .f-links li a{
     text-decoration: none;
     color:#d3d3d3;
-    font-size: 1.2em;
+    font-size: 1.1em;
     
 }
 .f-links li a:hover{
@@ -343,7 +342,7 @@ footer{
 }
 #f-social-media h3{
     font-weight: normal;
-    font-size: 1.4em;
+    font-size: 1.1rem;
     max-width: 20vw;
     word-wrap: break-word;
     color: #d3d3d3;
@@ -363,10 +362,6 @@ footer{
     border-top: 1px solid #fff;
 }
 
-.display-container-margin{
-    height:87vh;
-    width: 90%;
-}
 
 #ss-container{
     justify-content: space-evenly;
@@ -477,39 +472,158 @@ footer{
     border-radius: 9px;
     }
 #ttc-bottom-container{
-    background-color: #e0fbfc;
-    height:80vh;
+    background-color: #fff;
+    height:78vh;
     display: flex;
-    border:1px solid orange;
+    border:5px solid orange;
 }
 #tsc-container{
-    position: relative;
-    margin: 2.5% 0 2.5% 2.5%;
+    margin: 2.5%;
     width:30%;
-    text-align: center;
-    border:1px solid purple;
+    height:90%;
+    align-items: center;
 }
 #tutor-select-container{
-    border:1px solid red;
     width:100%;
-    height:95vh;
     overflow-y: scroll;
+    max-height:100%;
     scrollbar-width: thin;
     border-radius: 12px;
     scrollbar-color: #98c1d9 #e0fbfc;
     overflow-x:hidden;
 }
-#left-tdc{
-    width:95%;
-    max-width: 95%;
+.tutor-identity{
+    justify-self: center;
+    width:85%;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 25% 25% 50%;
+    grid-template-areas: 
+    "top-left top-right1"
+    "top-left top-right2"
+    "bottom bottom";
+    border-radius: 18px;
+    border: 1px solid #3d5a80;
+    height:30vh;
+    margin-bottom:5%;
+}
+.identity-top-left{
+    grid-area: top-left;
+    background-color:#98C1D9;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    border-top-left-radius: 18px;
+    
+}
+.identity-top-left::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    
+}
+.identity-portrait{
+    width:70%;
+    border-radius:18px;
+    height:auto;
+    z-index: 99;
+}
+.identity-top-right-1{
+    border-top-right-radius: 18px;
+    grid-area:top-right1;
+    background-color: #98C1D9;
+}
+.identity-top-right-1 h2{
+    color: #293241;
+    margin:5% 0 0 0;
+    font-size:clamp(1rem, 2.3vmin, 2rem);
+    line-height: 2rem;
+}
+.identity-top-right-1 h3{
+    margin:0;
+    color:#3d5a80;
+    font-size:clamp(0.8rem, 1.5vmin, 1.3rem);
+    line-height:clamp(1rem, 1.5vmin, 1.8rem);
+}
+.identity-top-right-2{
+    display:flex;
+    justify-content: left;
+    align-items: center;
+    grid-area:top-right2;
+    gap: 5%;
+
+}
+
+.identity-likes{
+    border-left: 1px solid #3d5a80;
+    padding-left:5%;
+}
+.identity-likes, .identity-rating{
+    height:80%;
+    display:flex;
+    flex-direction: column;
+    gap:5%;
+}
+.identity-rating h3, .identity-likes h3{
+    margin:0;
+    color:#3d5a80;
+    font-size:clamp(1.2rem, 2vmin, 1.7rem);
+    line-height:clamp(1.4rem, 2vmin, 2.1rem);
+}
+.identity-icon{
+    gap:20%;
+}
+.identity-stars{
+    gap:2%;
+}
+.identity-icon, .identity-stars{
+    display:flex;
+    height:40%;
+    align-items: end;
+}
+.identity-icon iconify-icon{
+    font-size:clamp(1.7rem, 1.2vmin, 2rem);
+    margin:0;
+}
+.identity-stars .fa{
+    font-size:clamp(1.2rem, 1vmin, 2rem);
+    margin:0;
+
+}
+.identity-bottom{
+    grid-area:bottom;
+    background: linear-gradient(#fff 80%, #3d5a80 80%);
+    border-bottom-left-radius: 18px;
+    border-bottom-right-radius: 18px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.identity-bottom h4{
+    font-size:1.7rem;
+    color: #293241;
+    margin:0;
+}
+.identity-bottom p{
+    font-size: 1.2rem;
+    margin:0;
+    color: #3d5a80;
+    font-weight:bold;
+    line-height: 2rem;
 }
 #tutor-select{
     display:flex;
     flex-direction: column;
     flex-shrink: 0;
     align-items: center;
+    gap:1rem;
 }
 .tutor-list{
+    height:20%;
     display:flex;
     border-radius: 12px;
     background: linear-gradient(90deg, #98c1d9 70%, #3d5a80 30%);
@@ -519,6 +633,11 @@ footer{
     cursor: pointer;
     animation: gradient-card 0.3s ease-in forwards;
 }
+#left-tdc{
+    width:95%;
+    max-width: 95%;
+}
+
 #tutor-display-container{
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0.8);
