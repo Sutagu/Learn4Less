@@ -418,70 +418,70 @@ footer{
 }
 #filter-dropmenu-container{
     background-color:#3d5a80;
+    width:90%;
     padding:1% 5% 1% 5%;
-    display: grid;
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-        "tutorCourse tutorCourse tutorCourse location location"
-        "ratings budget gender empty empty";
     align-items: center;
-    gap: 1vw;
     height:auto;      
 }
+#top-filter{
+    display:flex;
+    gap:1%;
+    margin-bottom:1%;
+}
+#bottom-filter{
+    display:flex;
+    gap: 1%;
+}
 #dropmenu-subject-search{
-    grid-area: tutorCourse;
+    width:60%;
 }
 #dropmenu-location-search{
-    grid-area: location;
+    width:30%;
 }
-#dropmenu-listed{
-    grid-area:ratings;
+#dropmenu-subject-search input, #dropmenu-location-search input{
+    width:100%;
+    padding:1.7rem;
+    border-radius: 18px;
+    border: none;
+    font-size: 1.3rem;
+    color:#293241;
 }
-#dropmenu-budget{
-    grid-area:budget;
-}
-#dropmenu-gender{
-    grid-area:gender;
-}
+
 .filter-dropmenu{
-    background-color:#3d5a80;
-    padding: 1vmin;
-    border-radius: 12px;
-    border: 0.1vmin solid #fff;
+    background-color:#293241;
+    padding: 1.3rem;
+    border-radius:5rem;
+    border: 3px solid #e0fbfc;
     overflow: hidden;
 }
-.filter-dropmenu button{
-    border:none;
-    background: none;
-    color: #ee6c4d;   
-}
+
 .dropmenu{
     color: #e0fbfc ;
     background: none;
     border: none;
+    font-size:1.5em;
+    
 }
 .dropmenu option{
-    background-color:#3d5a80c7;
+    font-size:1em;
+    background-color:#293241;
 }
-#tutor-search{
-    background-color:#fff;
-    border: none;
-    color:#8b8b8b;
-    text-align: right;
-    border-radius: 9px;
-    }
+
 #ttc-bottom-container{
     background-color: #fff;
     height:78vh;
     display: flex;
-    border:5px solid orange;
 }
 #tsc-container{
-    margin: 2.5%;
+    margin:2%;
     width:30%;
     height:90%;
-    align-items: center;
+    align-items: center;  
+}
+#tsc-container p{
+    color:#000;
+    text-align: center;
+    font-size:1em;
 }
 #tutor-select-container{
     width:100%;
@@ -529,9 +529,12 @@ footer{
 }
 .identity-portrait{
     width:70%;
+    height:70%;
+    object-fit:cover;
+    display:block;
     border-radius:18px;
-    height:auto;
     z-index: 99;
+    filter: drop-shadow(0 0.2em 0.2em #000);
 }
 .identity-top-right-1{
     border-top-right-radius: 18px;
@@ -577,6 +580,7 @@ footer{
 }
 .identity-icon{
     gap:20%;
+    overflow:visble !important;
 }
 .identity-stars{
     gap:2%;
@@ -589,6 +593,16 @@ footer{
 .identity-icon iconify-icon{
     font-size:clamp(1.7rem, 1.2vmin, 2rem);
     margin:0;
+    will-change: transform;
+    visibility: visible;
+    display:inline-block;
+    position:relative;
+    overflow: inherit !important;
+    z-index: 5;
+}
+svg:not(:root) {
+    overflow: visible; /* Allow overflow to be visible */
+    overflow-clip-margin: 0; /* Remove the clip margin */
 }
 .identity-stars .fa{
     font-size:clamp(1.2rem, 1vmin, 2rem);
@@ -615,40 +629,17 @@ footer{
     font-weight:bold;
     line-height: 2rem;
 }
-#tutor-select{
-    display:flex;
-    flex-direction: column;
-    flex-shrink: 0;
-    align-items: center;
-    gap:1rem;
-}
-.tutor-list{
-    height:20%;
-    display:flex;
-    border-radius: 12px;
-    background: linear-gradient(90deg, #98c1d9 70%, #3d5a80 30%);
-    background-size:100%;
-}
-.tutor-list:hover{
-    cursor: pointer;
-    animation: gradient-card 0.3s ease-in forwards;
-}
-#left-tdc{
-    width:95%;
-    max-width: 95%;
-}
 
 #tutor-display-container{
     border-radius: 12px;
-    background-color: rgba(255, 255, 255, 0.8);
     overflow-y:auto;
     scrollbar-color: #98c1d9 #e0fbfc;
-    height:73%;
+    height:90%;
     width:60%;
-    margin: 4% 0 2.5% 2.5%;
+    margin:2%;
 }
 #top-tdc{
-    margin: 5%;
+    border: 1px solid #ee6c4d;
     display:flex; 
 }
 .fa-bars{
@@ -763,7 +754,6 @@ button:hover{
 #desc-tdc{
     width: 90%;
     max-width:90%;
-    margin:5%;
     line-height: 3vmin;
     font-size:1.6vmin;
 }
@@ -803,14 +793,6 @@ button:hover{
     
 }
 
-#top-tdc{
-    margin: 5%;
-    display:flex; 
-}
-#left-tdc{
-    width:95%;
-    max-width: 95%;
-}
 
 #top-tdc header{
     color:#000;
@@ -916,7 +898,6 @@ button:hover{
 #desc-tdc{
     width: 90%;
     max-width:90%;
-    margin:5%;
     line-height: 3vmin;
     color:#000;
     font-size:1.6vmin;

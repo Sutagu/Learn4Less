@@ -107,14 +107,15 @@
         <div class="content-display-container" id="ftc-tutors" style="display:block;">
             <div class="display-container-margin" id="filter-tutor-container">
                 <form action="" method="POST" id="filter-dropmenu-container">
-                            <span class="filter-dropmenu" id="dropmenu-subject-search">
-                                <input type="search" id="tutor-search" name="search-box" placeholder="Search a tutor or course"/>
-                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <div id="top-filter">
+                            <span id="dropmenu-subject-search">
+                                <input type="search" name="search-box" placeholder="Search a tutor or course"/>
                             </span>
-                            <span class="filter-dropmenu" id="dropmenu-location-search">
-                                <input type="search" id="tutor-search" name="search-box" placeholder="Where"/>
-                                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+                            <span id="dropmenu-location-search">
+                                <input type="search" name="search-box" placeholder="Where"/>
                             </span>
+                        </div>
+                        <div id="bottom-filter">
                             <span class="filter-dropmenu">
                                 <select name="listed" class="dropmenu" id="dropmenu-listed">
                                     <option value="high-rate">Highest Ratings</option>
@@ -141,11 +142,74 @@
                                     <option value="female">Female</option>
                                 </select>
                             </span>
+                            <span class="filter-dropmenu">
+                                <select name="availability" class="dropmenu" id="dropmenu-availability">
+                                    <option value="display-all">Availability: Any</option>
+                                    <option value="morning">Morning</option>
+                                    <option value="afternoon">Afternoon</option>
+                                    <option value="evening">Evening</option>
+                                    <option value="weekends">Weekends</option>
+                                </select>
+                            </span>
+                            <span class="filter-dropmenu">
+                                <select name="language" class="dropmenu" id="dropmenu-language">
+                                    <option value="display-all">Language: Any</option>
+                                    <option value="english">English</option>
+                                    <option value="spanish">Spanish</option>
+                                    <option value="french">French</option>
+                                    <option value="german">German</option>
+                                    <option value="mandarin">Mandarin</option>
+                                    <!-- Add other languages as needed -->
+                                </select>
+                            </span>
+                            <span class="filter-dropmenu">
+                                <select name="tutor-type" class="dropmenu" id="dropmenu-tutor-type">
+                                    <option value="display-all">Tutor Type: Any</option>
+                                    <option value="online">Online</option>
+                                    <option value="in-person">In-Person</option>
+                                </select>
+                            </span>
+                            
+                        </div>    
+                            
                             <input type="submit" id="search-list-btn" value="Search"/>
                 </form>
                 <div id="ttc-bottom-container">
                     <div id="tsc-container">
                                 <div id="tutor-select-container">
+                                    <div class="tutor-identity">
+                                        <div class="identity-top-left">
+                                            <image src="images/michael.jpg" class="identity-portrait"></image>
+                                        </div>
+                                        <div class="identity-top-right-1">
+                                            <h2>Michael Wong</h2>
+                                            <h3>Bachelor of Music, University of Sydney</h3>
+                                        </div>
+                                        <div class="identity-top-right-2">
+                                            <div class="identity-rating">
+                                                <h3>Ratings</h3>
+                                                <div class="identity-stars">
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="identity-likes">
+                                                <h3>Likes</h3>
+                                                <div class="identity-icon">
+                                                    <iconify-icon icon="fluent-emoji:red-apple"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:potted-plant"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:video-game"></iconify-icon>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="identity-bottom">
+                                            <h4>Description</h4>
+                                            <p>Hi! I’m Michael Wong, a 23-year-old music major studying at University of Sydney. Music has been my passion for as long as I can remember, and I love helping others discover it.</p>
+                                        </div>
+                                    </div>
                                     <div class="tutor-identity">
                                         <div class="identity-top-left">
                                             <image src="images/amelia-wright.jpeg" class="identity-portrait"></image>
@@ -180,98 +244,109 @@
                                             <p>Hello! I’m Amelia Wright, a 22-year-old psychology major from the University of Sydney. I have a calming approach and enjoy helping others understand the human mind.</p>
                                         </div>
                                     </div>
-                                    <div id="tutor-select">
-                                        <div class="tutor-list">
-                                            <div class="list-left-container">
-                                                <h2>Seo Ji Won, 23</h2>
-                                                <h3>Bachelor of Music, Seoul High </h3>
-                                           
-                                                <h4>Description</h4>
-                                                <p>Hi! I’m Seo Ji Won, a 23-year-old music major studying at Seoul High. Music has been my passion for as long as I can remember, and I love helping others discover</p>
+                                    
+                                    <div class="tutor-identity">
+                                        <div class="identity-top-left">
+                                            <image src="images/tom.jpg" class="identity-portrait"></image>
+                                        </div>
+                                        <div class="identity-top-right-1">
+                                            <h2>Tom Smith</h2>
+                                            <h3>Bachelor of Computer Science, University of Sydney</h3>
+                                        </div>
+                                        <div class="identity-top-right-2">
+                                            <div class="identity-rating">
+                                                <h3>Ratings</h3>
+                                                <div class="identity-stars">
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
                                             </div>
-                                            <div class="list-right-container">
-                                                <image src="images/seo-ji-won.jpg" class="portrait list-portrait"></image>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star"></span>
-                                        
+                                            <div class="identity-likes">
+                                                <h3>Likes</h3>
+                                                <div class="identity-icon">
+                                                    <iconify-icon icon="fluent-emoji:red-apple"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:potted-plant"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:video-game"></iconify-icon>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="tutor-list">
-                                            <div class="list-left-container">
-                                                <h2>Rajit Sharma, 24</h2>
-                                                <h3>Bachelor of Computer Science, IIT Delhi</h3>
-                                                <h4>Description</h4>
-                                                <p>Hi! I’m Rajit Sharma, a 24-year-old computer science graduate from IIT Delhi. I’m passionate about coding and love teaching by breaking down tough concepts for others.</p>
-                                            </div>
-                                            <div class="list-right-container">
-                                                <image src="images/rajit-sharma.jpg" class="portrait list-portrait"></image>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star"></span>
-                                               
-                                            </div>
+                                        <div class="identity-bottom">
+                                            <h4>Description</h4>
+                                            <p>Hi! I’m Tom Smith, a 24-year-old computer science graduate from University of Sydney. I’m passionate about coding and love teaching by breaking down tough concepts for others.</p>
                                         </div>
-                                        
-                                        <div class="tutor-list">
-                                            <div class="list-left-container">
-                                                <h2>Amelia Wright, 22</h2>
-                                                <h3>Bachelor of Psychology, University of Sydney</h3>
-                                                <h4>Description</h4>
-                                                <p>Hello! I’m Amelia Wright, a 22-year-old psychology major from the University of Sydney. I have a calming approach and enjoy helping others understand the human mind.</p>
-                                            </div>
-                                            <div class="list-right-container">
-                                                <image src="images/amelia-wright.jpeg" class="portrait list-portrait"></image>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star"></span>
-                                           
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="tutor-list">
-                                            <div class="list-left-container">
-                                                <h2>Marco Rossi, 25</h2>
-                                                <h3>Bachelor of Architecture, Politecnico di Milano</h3>
-                                                <h4>Description</h4>
-                                                <p>Ciao! I’m Marco Rossi, a 25-year-old architecture graduate from Politecnico di Milano. I’m passionate about modern structures and love creating designs for the future.</p>
-                                            </div>
-                                            <div class="list-right-container">
-                                                <image src="images/marco-rossi.jpg" class="portrait list-portrait"></image>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star"></span>
-                                            
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="tutor-list">
-                                            <div class="list-left-container">
-                                                <h2>Alice Zhang, 21</h2>
-                                                <h3>Bachelor of Fine Arts, Rhode Island School of Design</h3>
-                                                <h4>Description</h4>
-                                                <p>Hi! I’m Alice Zhang, a 21-year-old fine arts major from RISD. I find inspiration in nature and express it through vibrant colors and textures in my art.</p>
-                                            </div>
-                                            <div class="list-right-container">
-                                                <image src="images/alice-zhang.jpg" class="portrait list-portrait"></image>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star star-checked"></span>
-                                                <span class="fa fa-star"></span>
-                                                <span class="fa fa-star"></span>
-                                               
-                                            </div>
-                                        </div>
-                                        
                                     </div>
+                                    
+                                    <div class="tutor-identity">
+                                        <div class="identity-top-left">
+                                            <image src="images/bertholdt.jpg" class="identity-portrait"></image>
+                                        </div>
+                                        <div class="identity-top-right-1">
+                                            <h2>Bertholdt Hoover</h2>
+                                            <h3>Bachelor of Architecture, University of Sydney</h3>
+                                        </div>
+                                        <div class="identity-top-right-2">
+                                            <div class="identity-rating">
+                                                <h3>Ratings</h3>
+                                                <div class="identity-stars">
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="identity-likes">
+                                                <h3>Likes</h3>
+                                                <div class="identity-icon">
+                                                    <iconify-icon icon="fluent-emoji:red-apple"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:potted-plant"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:video-game"></iconify-icon>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="identity-bottom">
+                                            <h4>Description</h4>
+                                            <p>Ciao! I’m Berthodt Hoover, a 25-year-old architecture graduate from University of Sydney. I’m passionate about modern structures and love creating designs for the future.</p>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tutor-identity">
+                                        <div class="identity-top-left">
+                                            <image src="images/dai.jpg" class="identity-portrait"></image>
+                                        </div>
+                                        <div class="identity-top-right-1">
+                                            <h2>Dai Luwa</h2>
+                                            <h3>Bachelor of Fine Arts, University of Sydney</h3>
+                                        </div>
+                                        <div class="identity-top-right-2">
+                                            <div class="identity-rating">
+                                                <h3>Ratings</h3>
+                                                <div class="identity-stars">
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star star-checked"></span>
+                                                    <span class="fa fa-star"></span>
+                                                    <span class="fa fa-star"></span>
+                                                </div>
+                                            </div>
+                                            <div class="identity-likes">
+                                                <h3>Likes</h3>
+                                                <div class="identity-icon">
+                                                    <iconify-icon icon="fluent-emoji:red-apple"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:potted-plant"></iconify-icon>
+                                                    <iconify-icon icon="fluent-emoji:video-game"></iconify-icon>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="identity-bottom">
+                                            <h4>Description</h4>
+                                            <p>Hi! I’m Dai Luwa, a 21-year-old fine arts major from UniSydney. I find inspiration in nature and express it through vibrant colors and textures in my art.</p>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
                                 <p> < 1 2 3 .. 8 ></p>
                     </div>
@@ -282,9 +357,9 @@
                                 <div id="top-tdc">
                                     <div id="left-tdc">
                                         <header>Bachelor of Music</header>
-                                        <header2>Seo Ji Won</header2>
+                                        <header2>Michael Wong</header2>
                                         <div id="tutor-key">
-                                            <div class="t-icon-desc"><div><i class="fa-solid fa-map-location-dot"></i></div><header3>Seoul High, Seoul</header3></div>
+                                            <div class="t-icon-desc"><div><i class="fa-solid fa-map-location-dot"></i></div><header3>University of Sydney</header3></div>
                                             <div class="t-icon-desc"><div><i class="fa-solid fa-graduation-cap"></i></div><header3>2nd Year</header3></div>
                                             <div class="t-icon-desc"><div><i class="fa-solid fa-coins"></i></div><header3>$22 p/h</header3></div>
                                             <div class="t-icon-desc" id="tdc-ratings">
@@ -323,7 +398,7 @@
                                     </div>
                                 </div>
                                 <div id="desc-tdc">
-                                    <p>Hi there! I’m Seo Ji Won, a 23-year-old music major at Seoul High, and I’m on a mission to bring fun and creativity to every music lesson. I’ve got years of experience in everything from piano to performance, and I’m here to make sure that your journey in music is as enjoyable as it is educational!
+                                    <p>Hi there! I’m Michael Wong, a 23-year-old music major at University of Sydney, and I’m on a mission to bring fun and creativity to every music lesson. I’ve got years of experience in everything from piano to performance, and I’m here to make sure that your journey in music is as enjoyable as it is educational!
                                     </br>
                                     </br>
                                     What You’ll Get with Me as Your Tutor:
@@ -335,7 +410,7 @@
                                         <li>Fun Exercises: Warm-ups, practice pieces, and maybe a few dance breaks to keep things lively!</li>
                                     </ul>
                                     </br>
-                                    Seo Ji Won has had: 25 Sessions
+                                    Michael Wong has had: 25 Sessions
                                          </p>
                                 </div>
                                 <div id="bot-tdc">
