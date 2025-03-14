@@ -421,21 +421,26 @@ footer{
 #filter-dropmenu-container{
     background-color:#3d5a80;
     width:95%;
-    padding:1% 0 1% 5%;
+    padding:1vh 0 1vh 5%;
     align-items: center;
     height:auto;      
 }
 #top-filter{
     display:flex;
     gap:1%;
-    margin-bottom:1%;
+    margin-bottom:1.5vh;
 }
 #bottom-filter{
     display:flex;
+    overflow-x: auto;
     gap: 1%;
+    max-width:90%;
+    -webkit-scrollbar { display: none; }
+    border-radius:10px;
 }
+
 #dropmenu-subject-search{
-    width:54%;
+    width:40%;
 }
 #dropmenu-location-search{
     width:30%;
@@ -446,36 +451,34 @@ footer{
     border:1px solid #fff;
     border-radius:1rem;
     color:#fff;
-    width:6%;
-    font-size:1.4rem;
+    width:auto;
+    padding: 0% 2%;
+    font-size:clamp(0.7rem, 2vmin, 1.2rem);
     font-weight: bold;
     letter-spacing:0.1rem;
 }
-#search-list-btn:hover{
-    cursor:not-allowed;
-}
+
 #dropmenu-subject-search input, #dropmenu-location-search input{
     width:100%;
-    padding:1.7rem;
+    padding:clamp(0.8rem, 1.5vmin, 1.7rem);
     border-radius: 18px;
     border: none;
-    font-size: 1.3rem;
+    font-size: clamp(0.8rem, 1.5vmin, 1.4rem);
     color:#293241;
 }
 
 .filter-dropmenu{
     background-color:#293241;
-    padding: 1.3rem;
+    padding: clamp(0.6rem, 1.5vmin, 1.3rem);
     border-radius:5rem;
-    border: 3px solid #e0fbfc;
-    overflow: hidden;
+    border: 1px solid #e0fbfc;
 }
 
 .dropmenu{
     color: #e0fbfc ;
     background: none;
     border: none;
-    font-size:1.5em;
+    font-size: clamp(0.9rem, 1.5vmin, 1.5em);
     
 }
 .dropmenu option{
@@ -590,11 +593,11 @@ footer{
     line-height:clamp(1.4rem, 2vmin, 2.1rem);
 }
 .identity-icon{
-    gap:20%;
+    gap:0.1vw;
     overflow:visble !important;
 }
 .identity-stars{
-    gap:2%;
+    gap:0.1vw;
 }
 .identity-icon, .identity-stars{
     display:flex;
@@ -602,14 +605,14 @@ footer{
     align-items: end;
 }
 .identity-icon iconify-icon{
-    font-size:clamp(1.7rem, 1.2vmin, 2rem);
+    font-size:clamp(0.7rem, 1.5vmin, 1.3rem);
     margin:0;
     overflow: inherit !important;
     z-index: 5;
 }
 
 .identity-stars .fa{
-    font-size:clamp(1.2rem, 1vmin, 2rem);
+    font-size:clamp(0.5rem, 1.2vmin, 1.3rem);
     margin:0;
     color:#202020;
 }
@@ -626,17 +629,17 @@ footer{
     padding-right: 5%;
 }
 .identity-bottom h4{
-    font-size:1.7rem;
+    font-size:clamp(1.2rem, 2vmin, 1.7rem);
     color: #293241;
     margin:0;
     text-align: left;
 }
 .identity-bottom p{
-    font-size: 1.2rem;
+    font-size: clamp(0.7rem, 1.7vmin, 1.2rem);
     margin:0;
     color: #3d5a80;
     font-weight:bold;
-    line-height: 2rem;
+    line-height: clamp(0.7rem, 1.7vmin, 1.5rem);
     text-align: left;
 }
 
@@ -661,11 +664,11 @@ footer{
     text-align:left;
     color:#000;
     font-weight:700;
-    font-size:3.5rem;
+    font-size:clamp(1.7rem, 4vmin, 3rem);
 }
 #top-tdc header2{
     color: #5c5c5c;
-    font-size:3rem;
+    font-size:clamp(1.4rem, 3.5vmin, 2.7rem);
     font-weight:700;
 }
 #tutor-key{
@@ -678,7 +681,7 @@ footer{
 .t-icon-desc{
     text-align: left;
     margin-top:1rem;
-    font-size:1.5rem;
+    font-size:clamp(0.8rem, 2.5vmin, 1.3rem);
     display:flex;    
 }
 .t-icon-desc i{
@@ -699,8 +702,8 @@ footer{
     background-color:#98c1d9;
     border:none;
     color: #e0fbfc;
-    font-size:1.5rem;
-    padding: 1.3rem;
+    font-size:clamp(0.8rem, 2.5vmin, 1.3rem);
+    padding: 1rem;
 }
 #tutor-key-book:hover{
     cursor: not-allowed;
@@ -716,7 +719,7 @@ footer{
 }
 #desc-ellipsis{
     position:static;
-    font-size:2rem;
+    font-size:clamp(0.8rem, 3.5vmin, 2rem);
     color: #000;
 }
 #desc-ellipsis:hover{
@@ -728,10 +731,10 @@ footer{
     flex-direction: column;
     align-items: center;
     gap:1.5rem;
-    font-size:2.2rem;
+    font-size:clamp(0.8rem, 2.5vmin, 2rem);
 }
 #gmail-icon{
-    font-size:1.6rem;
+    font-size:clamp(0.5rem, 2.1vmin, 1.6rem);
 }
 #tdc-icons i,iconify-icon:hover{
     cursor: pointer;
@@ -739,23 +742,24 @@ footer{
 #desc-tdc{
     width: 90%; 
     max-width:90%;
-    line-height: 2.7rem;
+    line-height:clamp(1rem, 3vmin, 2.5rem);
     color:#000;
-    font-size:1.6rem;
+    font-size:clamp(0.5rem, 1.9vmin, 1.6rem);
 }
 
 #bot-tdc{
     width:100%;
-    border-top:3px solid #000;
+    border-top:1px solid #000;
     display:flex;
     justify-content: space-evenly;
     padding-top:3%;
+    margin-top:3%;
 }
 .tutor-rating-atr{
     background-color: #98c1d9;
     color:#3d5a80;
-    font-size:1.2rem;
-    padding:1.5rem;
+    font-size:clamp(0.5rem, 1.3vmin, 1.2rem);
+    padding:2%;
     max-width:15%;
     border-radius: 12px;
 }
@@ -778,7 +782,8 @@ footer{
 
 
 #bookmark-tdesc{
-    font-size:2.4vmin;
+    color:#ee6c4d;
+    font-size:clamp(0.8rem, 2.5vmin, 1.8rem);
 }
 
 #dropdown-menu {
@@ -915,46 +920,8 @@ footer{
     font-size:2.2vmin;
 }
 
-#resources-container{
-    display:flex;
-    width:100%;
-}
-#left-resources-filter-container{
-    border-top:1px solid #98C1D9;
-    width: 25%;
-    
-}
-#right-resources-items-container{
-    border-top:1px solid #98C1D9;
-    border-left:1px solid #98C1D9;
-    background-color:#f8f9fa;
-    width: 75%;
-}
-#lrf-container{
-    margin:10%;
-    height:90%;
-    position: relative;
-}
-
-
 .grid-item:hover{
     cursor: pointer;
-}
-#price-range-container{
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#price-range-container span{
-    width: 40%;
-}
-#price-range-container span input::-webkit-inner-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
-}
-#price-range-container span input::-webkit-outer-spin-button{
-    -webkit-appearance: none;
-    margin: 0;
 }
 textarea:focus, input:focus, select:focus{
     outline: none;
@@ -983,6 +950,7 @@ textarea:focus, input:focus, select:focus{
     text-align: left;
     font-size: 2.5rem;
     color: #323952;
+    max-width:100%;
 }
 
 .about-content p {
@@ -1011,6 +979,15 @@ textarea:focus, input:focus, select:focus{
 }
 
 @media only screen and (min-width:700px) and (max-width:1140px){
+    .about-container{
+        display:block;
+    }
+    .about-content{
+        width:100%;
+    }
+    .about-image{
+        display:none;
+    }
     .single-attribute p,h1{   
         font-size:1.5em;
         line-height:1.2em;
@@ -1040,8 +1017,21 @@ textarea:focus, input:focus, select:focus{
         width:40%;
         margin: 0 auto;
     }
+    #typewriter-select{
+        margin:5% 0;
+    }
 }
 @media only screen and (min-width:0px) and (max-width:700px){
+    .about-container{
+        display:block;
+    }
+    .about-content{
+        width:100%;
+    }
+    .about-image{
+        display:none;
+    }
+    
     #homepage-introduction{
         font-size: 1.5em;
         top:70%;
@@ -1127,16 +1117,7 @@ textarea:focus, input:focus, select:focus{
         line-height: 1.2em;
         letter-spacing: 1px;
     }
-    .nav-container div ul li a{
-        font-size:4vmin;
-    }
-    .nav-container div ul{
-        width:75%;
-    }
-    .nav-logo{
-        width:10vmin;
-        height:8.5vmin;
-    }
+
     .f-links h2{
         font-size:1.3em;
         line-height: 1em;
@@ -1202,13 +1183,13 @@ textarea:focus, input:focus, select:focus{
         height:30vh;
         margin-top:5%;
         width:70%;
-        margin: 10%;
     }
     #typewriter-state-container h5{
         font-size:1.4em;
     }
     #typewriter-select{
         font-size:1.5em;
+        margin:5% 0;
     }
     #typewriter-state-container p{
         font-size:1em;

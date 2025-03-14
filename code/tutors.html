@@ -24,7 +24,7 @@
         </div>
     </nav>
     <main>
-        <div class="content-display-container" id="ss-tutors" style="display:block">
+        <div class="content-display-container" id="ss-tutors" style="display:none">
             <div class="display-container-margin" id="ss-container">
                 <svg id="au-ss-map" baseprofile="tiny" version="1.2" viewbox="0 0 1000 966" xmlns="http://www.w3.org/2000/svg">
                     <g id="features">
@@ -60,8 +60,8 @@
                      </circle>
                      <circle class="Tasmania" cx="796.8" cy="876.6" id="AUTAS">
                      </circle>
-                     <!-- <circle class="Australian-Capital-Territory" cx="850.2" cy="685" id="AUACT">
-                     </circle> -->
+                     <circle class="Australian-Capital-Territory" cx="850.2" cy="685" id="AUACT">
+                     </circle>
                     </g>
                    </svg>
                    <div id="typewriter-state-container">
@@ -104,7 +104,7 @@
                     </div>
                     
         </div>
-        <div class="content-display-container" id="ftc-tutors" style="display:none;">
+        <div class="content-display-container" id="ftc-tutors" style="display:block;">
             <div class="display-container-margin" id="filter-tutor-container">
                 <form action="" method="POST" id="filter-dropmenu-container">
                         <div id="top-filter">
@@ -114,7 +114,7 @@
                             <span id="dropmenu-location-search">
                                 <input type="search" name="search-box" placeholder="Where"/>
                             </span>
-                            <input type="submit" id="search-list-btn" value="APPLY"/>
+                            <input type="submit" class="not-available" id="search-list-btn" value="APPLY"/>
                         </div>
                         <div id="bottom-filter">
                             <span class="filter-dropmenu">
@@ -184,7 +184,7 @@
                                         </div>
                                         <div class="identity-top-right-1">
                                             <h2>Michael Wong</h2>
-                                            <h3>Bachelor of Music, University of Sydney</h3>
+                                            <h3 class="university-temp">Bachelor of Music, University of </h3>
                                         </div>
                                         <div class="identity-top-right-2">
                                             <div class="identity-rating">
@@ -217,7 +217,7 @@
                                         </div>
                                         <div class="identity-top-right-1">
                                             <h2>Amelia Wright</h2>
-                                            <h3>Bachelor of Psychology, University of Sydney</h3>
+                                            <h3 class="university-temp">Bachelor of Psychology, University of </h3>
                                         </div>
                                         <div class="identity-top-right-2">
                                             <div class="identity-rating">
@@ -252,7 +252,7 @@
                                         </div>
                                         <div class="identity-top-right-1">
                                             <h2>Tom Smith</h2>
-                                            <h3>Bachelor of Computer Science, University of Sydney</h3>
+                                            <h3 class="university-temp">Bachelor of Computer Science, University of </h3>
                                         </div>
                                         <div class="identity-top-right-2">
                                             <div class="identity-rating">
@@ -286,7 +286,7 @@
                                         </div>
                                         <div class="identity-top-right-1">
                                             <h2>Bertholdt Hoover</h2>
-                                            <h3>Bachelor of Architecture, University of Sydney</h3>
+                                            <h3 class="university-temp">Bachelor of Architecture, University of </h3>
                                         </div>
                                         <div class="identity-top-right-2">
                                             <div class="identity-rating">
@@ -320,7 +320,7 @@
                                         </div>
                                         <div class="identity-top-right-1">
                                             <h2>Dai Luwa</h2>
-                                            <h3>Bachelor of Fine Arts, University of Sydney</h3>
+                                            <h3 class="university-temp">Bachelor of Fine Arts, University of</h3>
                                         </div>
                                         <div class="identity-top-right-2">
                                             <div class="identity-rating">
@@ -360,7 +360,7 @@
                                         <header>Bachelor of Music</header>
                                         <header2>Michael Wong</header2>
                                         <div id="tutor-key">
-                                            <div class="t-icon-desc"><div><i class="fa-solid fa-map-location-dot"></i></div><header3>University of Sydney</header3></div>
+                                            <div class="t-icon-desc"><div><i class="fa-solid fa-map-location-dot"></i></div><header3 class="university-temp">University of </header3></div>
                                             <div class="t-icon-desc"><div><i class="fa-solid fa-graduation-cap"></i></div><header3>2nd Year</header3></div>
                                             <div class="t-icon-desc"><div><i class="fa-solid fa-coins"></i></div><header3>$22 p/h</header3></div>
                                             <div class="t-icon-desc" id="tdc-ratings">

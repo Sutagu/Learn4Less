@@ -94,6 +94,9 @@ document.addEventListener('DOMContentLoaded',function(){
                         ss.style.display = 'none';
                         ftc.style.display ='block';
                         const state = button.getAttribute('name');
+                        document.querySelectorAll('.university-temp').forEach(element =>{
+                            element.textContent = "University of "+ state
+                        })
                     });
                     setTimeout(() => {
                         typewriterTxtContent.textContent=state;
