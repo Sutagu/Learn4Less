@@ -1,11 +1,4 @@
-window.addEventListener('load', function() {
-    if (window.location.hash) {
-        window.scrollTo({
-            top:0
-        });
-        window.history.pushState("", document.title, window.location.pathname);
-    }
-});
+
 document.addEventListener('DOMContentLoaded',function(){
     console.log('JS Loaded');
     const viewportHeight = window.innerHeight;
