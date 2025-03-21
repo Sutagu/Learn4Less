@@ -13,7 +13,7 @@ body{
     margin:0;
     padding: 0;
     max-width: 100%;
-    
+    overflow-x:hidden;
 }
 main{
     margin:0;
@@ -638,11 +638,11 @@ footer{
     text-align: left;
 }
 .identity-bottom p{
-    font-size: clamp(0.7rem, 1.35vmin, 1.2rem);
+    font-size: clamp(0.75rem, 1.35vmin, 1.2rem);
     margin:0;
     color: #3d5a80;
     font-weight:bold;
-    line-height: clamp(0.7rem, 1.7vmin, 1.5rem);
+    line-height: clamp(1rem, 1.7vmin, 1.5rem);
     text-align: left;
 }
 
@@ -761,7 +761,7 @@ footer{
 .tutor-rating-atr{
     background-color: #98c1d9;
     color:#3d5a80;
-    font-size:clamp(0.5rem, 1.2vmin, 1.2rem);
+    font-size:clamp(0.6rem, 1.2vmin, 1.2rem);
     padding:2%;
     max-width:15%;
     border-radius: 12px;
@@ -910,15 +910,16 @@ footer{
 }
 #right-tdc-img{
     align-self: center;
-    width:15vmin;
-    height:15vmin;
+    width:20vmin;
+    height:20vmin;
+    object-fit: cover;
     margin-bottom:2vmin;
-    border-bottom: 1vmin solid #ee6c4d;
     border-radius: 20px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 #tdc-iso-icons{
     display:flex;
-    width:25vmin;
+    width:22vmin;
     justify-content: space-evenly;
     font-size:2.2vmin;
 }
@@ -1027,9 +1028,13 @@ textarea:focus, input:focus, select:focus{
 @media only screen and (min-width:0px) and (max-width:700px){
     .about-container{
         display:block;
+        width:auto;
+        max-width: 99vw;
+        margin: 0 !important;
     }
     .about-content{
         width:100%;
+        padding:0;
     }
     .about-image{
         display:none;
@@ -1187,6 +1192,12 @@ textarea:focus, input:focus, select:focus{
         margin-top:5%;
         width:70%;
     }
+    #tutor-display-container{
+        display:none;
+    }
+    #tsc-container{
+        width:100%;
+    }
     #typewriter-state-container h5{
         font-size:1.4em;
     }
@@ -1197,7 +1208,36 @@ textarea:focus, input:focus, select:focus{
     #typewriter-state-container p{
         font-size:1em;
     }
-
+    #desc-tdc p{
+        font-size:1.5em;
+        line-height:2
+    }
+    #desc-tdc ul li{
+        font-size:1.5em;
+        line-height:2
+    }
+    #left-tdc header{
+        font-size:1.2em;
+    }
+    #left-tdc header2{
+        font-size:1em;
+    }
+    #tdc-ratings{
+        gap:0.1rem;
+    }
+    .fa-star{
+        font-size:1em !important;
+    }
+    #bot-tdc{
+        max-width: 100%;
+        flex-wrap: wrap;
+    }
+    .tutor-rating-atr{
+        max-width: none;
+        font-size:0.7em;
+        margin:1%;
+        
+    }
      
 }
 @keyframes typing{

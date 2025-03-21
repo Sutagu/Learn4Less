@@ -111,6 +111,15 @@ document.addEventListener('DOMContentLoaded',function(){
                 
             })
         });
+        if(window.innerWidth <700){
+            const tutors = document.querySelectorAll('.tutor-identity');
+            tutors.forEach(button =>{
+                button.addEventListener('click', () =>{
+                    window.location.href='tutor-isolate.html';
+                });
+            });
+        }
+        
     }
     const ellipsis = document.getElementById('desc-ellipsis');
     const dropdownMenu = document.getElementById('dropdown-menu');
